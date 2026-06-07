@@ -47,6 +47,18 @@ data/
 │
 ├── arabic/
 │   ├── intermediate/
+│   │   ├── qa_data_arabic.json
+│   │   ├── qa_data_backtranslated.json
+│   │   ├── semantic_similarity_results.json
+│   │   └── semantic_similarity_results_0_85.json
+│   ├── manual_review/
+│   │   ├── annotation_forms/
+│   │   └── samples/
+│   ├── translation_model_selection/
+│   │   ├── gpt4o/
+│   │   ├── gpt4o_mini/
+│   │   ├── pilot_100_original.json
+│   │   └── pilot_model_comparison_summary.json
 │   └── final/
 │       ├── final_arabic_dataset.json
 │       └── final_english_dataset.json
