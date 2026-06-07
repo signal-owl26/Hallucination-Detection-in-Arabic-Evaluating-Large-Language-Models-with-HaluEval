@@ -226,7 +226,7 @@ cd src/analysis
 python analyze_results.py
 ```
 
-The analysis outputs are saved in the [`data/evaluation`](data/evaluation) directory.
+The analysis outputs are saved in the [`results`](results) directory.
 
 ## Installation
 
