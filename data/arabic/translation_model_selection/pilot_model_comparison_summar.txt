@@ -1,0 +1,2 @@
+GPT-4o means: {'knowledge_mean': 0.9694965648651123, 'question_mean': 0.9585108679533004, 'right_answer_mean': 0.9871291399002076, 'hallucinated_answer_mean': 0.963914543390274}
+GPT-4o-mini means: {'knowledge_mean': 0.946956177353859, 'question_mean': 0.9405190569162368, 'right_answer_mean': 0.9648349779844284, 'hallucinated_answer_mean': 0.944032741189003}

@@ -1,0 +1,46 @@
+I want you act as an answer judge. Given a knowledge, question and an answer, your objective is to determine if the provided answer contains non-factual or hallucinated information. You SHOULD give your judgement based on the following hallucination types and the provided knowledge.
+
+RULES:
+- Use only the provided #Knowledge# to judge.
+- If the #Knowledge# does not contain enough information to verify a factual claim in the Answer, then the Answer is a hallucination -> output "Yes".
+- If ANY part of the Answer contradicts the Knowledge -> output "Yes".
+- If the Answer adds specific details (numbers, dates, names, locations quotes, etc.) that are not stated or safely inferable from the Knowledge -> output "Yes".
+- If the Answer does not address the Question’s intent (wrong entity, wrong relation or irrelevant) -> output "Yes".
+- Output "No" ONLY if the Answer is fully supported by the Knowledge and answers the Question , without adding unsupported claims.
+
+
+Examples:
+
+You are trying to determine if the answer misunderstands the question context and intention.
+#Knowledge#: American Hairless Terrier is a rare breed of dog. It was derived as a variant of the Rat Terrier.
+#Question#: What is a rare breed of dog that was derived as a variant of Rat Terrier, Shiloh Shepherd dog or American Hairless Terrier?
+#Answer#: American Hairless Terrier
+#Your Judgement#: No
+
+You are trying to determine if there is a factual contradiction between the answer and the provided knowledge. Some information in the answer might be fabricated.
+#Knowledge#: The New Orleans Outfall Canals are not the same length as the Augusta Canal. The Orleans Canal is approximately 5.9 miles (9.5 km) long while the Augusta Canal is approximately 7 miles (11.3 km) long.
+#Question#: Are the New Orleans Outfall Canals the same length as the Augusta Canal?
+#Answer#: No, the New Orleans Outfall Canals and the Augusta Canal are not the same length. The Orleans Canal is approximately 3.6 miles (5.8 kilometers) long while the Augusta Canal is approximately 7 miles (11.3 kilometers) long.
+#Your Judgement#: Yes
+
+You are trying to determine if the answer is too general or too specific to answer the question at an appropriate level of specificity.
+#Knowledge#: Superheaven and Oceansize are rock bands.
+#Question#: What genre do Superheaven and Oceansize belong to?
+#Answer#: Superheaven and Oceansize belong to the rock genre.
+#Your Judgement#: No
+#Knowledge#: Marie Curie’s profession was physicist and chemist and Albert Einstein’s was a physicist.
+#Question#: What profession do Marie Curie and Albert Einstein share?
+#Answer#: Scientist.
+#Your Judgement#: Yes
+
+You are trying to determine if the answer can be correctly inferred from the knowledge.
+#Knowledge#: Muse has 3 members.
+#Question#: Which band has more members, Muse or The Raconteurs?
+#Answer#: Muse has more members than The Raconteurs.
+#Your Judgement#: Yes
+#Knowledge#: Meadowbank Gold Mine is currently producing gold while the Temagami-Lorrain Mine has been inactive for years.
+#Question#: Which is currently active, Temagami-Lorrain Mine or Meadowbank Gold Mine?
+#Answer#: Meadowbank Gold Mine, since Meadowbank Gold Mine is still producing gold and the TemagamiLorrain Mine has been inactive for years.
+#Your Judgement#: No
+
+You should try your best to determine if the answer contains non-factual or hallucinated information according to the above hallucination types. The answer you give MUST be \"Yes\" or \"No\"".

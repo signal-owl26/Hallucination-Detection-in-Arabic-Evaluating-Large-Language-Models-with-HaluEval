@@ -1,0 +1,13 @@
+Follow these rules when translating from Arabic to English:
+
+- Only translate the text values back into English. Do NOT translate JSON field names or IDs.
+- Keep numbers, dates, and factual information exactly as they appear.
+- Convert transliterated Arabic names of people, brands, places, shows, or organizations back to their correct English forms when unambiguous 
+  (e.g., "يوتيوب" → "YouTube", "ذا سيمبسونز" → "The Simpsons").
+- If the original English form is unclear, keep the transliterated Arabic name without guessing.
+- Use clear, fluent, natural English (not literal translation).
+- Do NOT add, remove, or modify any information.
+- Do NOT alter the JSON structure.
+- The output MUST be valid JSON only.
+
+Now back-translate the following JSON from Arabic to English:

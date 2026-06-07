@@ -1,0 +1,26 @@
+Translate the following JSON into Modern Standard Arabic following these rules:
+
+1. Do NOT translate JSON keys. Only translate the VALUES of:
+   "knowledge", "question", "right_answer", "hallucinated_answer".
+2. Preserve all factual meaning exactly. Do not add, remove, or change information.
+3. Keep all numbers and dates in Western numerals (0–9) exactly as written.
+4. Output MUST contain ZERO Latin letters anywhere (A–Z, a–z), even inside parentheses or quotes.
+5. For any English proper nouns or titles, use phonetic transliteration into Arabic script (do NOT translate titles by meaning), including:
+   - people, places, brands, organizations, acronyms
+   - song/movie/book/album/TV titles
+   - product names and chart/list names
+   Examples:
+   "The Everly Brothers" = "إيفرلي براذرز"
+   "Billboard Hot 100" = "بيلبورد هوت 100"
+   "NASA" = "ناسا"
+   "HOK" = "إتش أو كيه"
+   "Love Me Tender" = "لاف مي تِندر"
+   "NCAA" = "إن سي إيه إيه"
+   "MVIAA" = "إم في آي إيه إيه".
+6. Produce natural, fluent Arabic (not literal).
+7. Use Arabic punctuation naturally and «...» for titles/names when helpful.
+8. Do NOT insert hidden direction-control characters (e.g., U+200E, U+200F, U+202A–U+202E).
+9. Maintain the exact JSON structure (array vs object must stay the same).
+10. Output must be valid JSON only, containing only the translated JSON.
+
+Now translate this JSON:

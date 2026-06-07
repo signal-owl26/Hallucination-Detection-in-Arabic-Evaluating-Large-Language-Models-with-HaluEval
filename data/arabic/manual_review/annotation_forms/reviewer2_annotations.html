@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)file:///C:/Users/ADMIN/Downloads/review_side_by_side%20(1).html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+body { font-family: Arial, sans-serif; margin: 16px; }
+table { border-collapse: collapse; width: 100%; table-layout: fixed; }
+th, td { border: 1px solid #ddd; padding: 10px; vertical-align: top; }
+th { position: sticky; top: 0; background: #f5f5f5; z-index: 1; }
+td { white-space: pre-wrap; word-wrap: break-word; }
+.col-id { width: 70px; }
+.col-en { width: 32%; direction: ltr; }
+.col-ar { width: 32%; direction: rtl; text-align: right; font-family: "Arial", "Tahoma"; }
+.col-label { width: 80px; }
+.col-comment { width: 150px; }
+.small { font-size: 12px; color: #555; margin-bottom: 10px; }
+</style>
+</head><body>
+<h2>Review Guidelines</h2>
+<ul>
+<li>For each row, compare EN vs AR for all fields, give one overall label per row: Good, acceptable or not valid.</li>
+<li>Mark as Good if the Arabic conveys the same core meaning as the English, even if wording is different.</li>
+<li>Mark as Good if the Arabic is readable and clear, even if it sounds slightly awkward.</li>
+<li>Mark as not valid if the Arabic changes meaning in a way that could affect evaluation, for example: wrong person/place/date/number.</li>
+<li>It is alright if Names are transliterated.</li>
+</ul>
+<h2>Answer Review Table</h2>
+<div class="small">Side-by-side EN vs AR review.</div><table>
+<tbody><tr>
+  <th class="col-id">id</th>
+  <th class="col-en">knowledge (EN)</th>
+  <th class="col-ar">knowledge (AR)</th>
+  <th class="col-en">question (EN)</th>
+  <th class="col-ar">question (AR)</th>
+  <th class="col-en">right_answer (EN)</th>
+  <th class="col-ar">right_answer (AR)</th>
+  <th class="col-en">hallucinated_answer (EN)</th>
+  <th class="col-ar">hallucinated_answer (AR)</th>
+  <th class="col-label">Label</th>
+  <th class="col-comment">Comment</th>
+</tr>
+
+<tr>
+<td class="col-id">4094</td>
+<td class="col-en">Phyllis Bedells (9 August 1893 – 2 May 1985) was an English ballerina and teacher. She studied with Bolm, Cecchetti, and Pavlova.The Empire, Leicester Square is a cinema currently operated by Cineworld on the north side of Leicester Square, London.</td>
+<td class="col-ar">فيليس بيديلز (9 أغسطس 1893 – 2 مايو 1985) كانت باليرينا إنجليزية ومعلمة. درست مع بولم، تشيكيتي، وبافلوفا. «ذا إمباير»، ليستر سكوير هو سينما تُدار حالياً بواسطة سينيوورلد في الجانب الشمالي من ليستر سكوير، لندن.</td>
+<td class="col-en">What ballerina danced at a cinema currently operated by Cineworld on the north side of Leicester Square?</td>
+<td class="col-ar">أي باليرينا رقصت في سينما تُدار حالياً بواسطة سينيوورلد في الجانب الشمالي من ليستر سكوير؟</td>
+<td class="col-en">Phyllis Bedells</td>
+<td class="col-ar">فيليس بيديلز</td>
+<td class="col-en">The Empire, Leicester Square was once the site of Phyllis Bedells' famous ballet performance.</td>
+<td class="col-ar">كانت «ذا إمباير»، ليستر سكوير في يوم من الأيام موقعاً لأداء الباليه الشهير لفيليس بيديلز.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">869</td>
+<td class="col-en">Fences is a 1985 play by American playwright August Wilson.August Wilson (April 27, 1945 – October 2, 2005) was an American playwright whose work included a series of ten plays, "The Pittsburgh Cycle", for which he received two Pulitzer Prizes for Drama.</td>
+<td class="col-ar">«فينس» هي مسرحية صدرت في عام 1985 من تأليف كاتب المسرح الأمريكي أوغست ويلسون. وُلِد أوغست ويلسون في 27 أبريل 1945 وتوفي في 2 أكتوبر 2005، وكان كاتب مسرح أمريكي معروف بأعماله التي تضمنت سلسلة من عشر مسرحيات، «دورة بيتسبرغ»، والتي حصل من خلالها على جائزتين من جوائز بوليتزر للدراما.</td>
+<td class="col-en">Fences is a 1985 play by an American playwright who died in what year?</td>
+<td class="col-ar">«فينس» هي مسرحية صدرت في عام 1985 من تأليف كاتب مسرح أمريكي توفي في أي عام؟</td>
+<td class="col-en">2005</td>
+<td class="col-ar">2005</td>
+<td class="col-en">Wilson died in 1995.</td>
+<td class="col-ar">توفي ويلسون في عام 1995.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">267</td>
+<td class="col-en">John Powers Severin (December 26, 1921 – February 12, 2012) was an American comics artist noted for his distinctive work with EC Comics, primarily on the war comics "Two-Fisted Tales" and "Frontline Combat"; for Marvel Comics, especially its war and Western comics; and for his 45-year stint with the satiric magazine "Cracked". Founded in 1958, "Cracked" proved to be the most durable of the many publications to be launched in the wake of "Mad" magazine.</td>
+<td class="col-ar">جون باورز سيفيرين (26 ديسمبر 1921 – 12 فبراير 2012) كان فنان قصص مصورة أمريكي معروف بأعماله المميزة مع إي سي كومكس، وخاصة في قصص الحرب «تو-فيستد تيلز» و«فرونتلاين كومبات»؛ ومع مارفل كومكس، خاصة قصص الحرب والغرب؛ ولعمله لمدة 45 عامًا مع المجلة الساخرة «كراكيد». تأسست في 1958، أثبتت «كراكيد» أنها الأكثر استمرارية بين العديد من المنشورات التي أُطلقت بعد مجلة «ماد».</td>
+<td class="col-en">John Severin was an American comics artist who had a 45 year stint with the magazine Cracked that was founded in what year?</td>
+<td class="col-ar">كان جون سيفيرين فنان قصص مصورة أمريكي عمل لمدة 45 عامًا مع مجلة كراكيد التي تأسست في أي عام؟</td>
+<td class="col-en">1958</td>
+<td class="col-ar">1958</td>
+<td class="col-en">John Severin worked for many years with "Cracked" magazine, but I am not able to locate the year in which the magazine was founded.</td>
+<td class="col-ar">عمل جون سيفيرين لسنوات عديدة مع مجلة «كراكيد»، لكنني غير قادر على تحديد السنة التي تأسست فيها المجلة.</td>
+<td class="col-label" contenteditable="true">Acceptable</td>
+<td class="col-comment" contenteditable="true">Slight grammatical mistakes: بعمله instead of لعمله , There is literal translation here:Founded 1958…, which is not stylistically natural in formal Arabic.  The question in arabic is a bit awkward, a more accurate translation would be : متى تأسست مجلة «كراكيد»، التي كان جون سيفيرين يعمل فيها لمدة 45 عامًا كفنان أمريكي للقصص المصورة؟</td>
+</tr>
+<tr>
+<td class="col-id">4850</td>
+<td class="col-en">Antoine Marie Jean-Baptiste Roger, comte de Saint-Exupéry (] ; 29 June 1900 – 31 July 1944) was a French writer, poet, aristocrat, journalist, and pioneering aviator.Bruce Jay Friedman is an American novelist, screenwriter, playwright, and actor.</td>
+<td class="col-ar">أنطوان ماري جان-باتيست روجي، كونت سانت-إكزوبيري (29 يونيو 1900 – 31 يوليو 1944) كان كاتبًا فرنسيًا، شاعرًا، أرستقراطيًا، صحفيًا، ورائد طيران. بروس جاي فريدمان هو روائي أمريكي، كاتب سيناريو، كاتب مسرحي، وممثل.</td>
+<td class="col-en">Which writer was involved in the greatest number of fields not related to writing, Antoine de Saint-Exupéry or Bruce Jay Friedman?</td>
+<td class="col-ar">أي كاتب كان متورطًا في أكبر عدد من المجالات غير المتعلقة بالكتابة، أنطوان دي سانت-إكزوبيري أم بروس جاي فريدمان؟</td>
+<td class="col-en">Antoine Marie Jean-Baptiste Roger, comte de Saint-Exupéry</td>
+<td class="col-ar">أنطوان ماري جان-باتيست روجي، كونت سانت-إكزوبيري</td>
+<td class="col-en">Bruce Jay Friedman was more involved.</td>
+<td class="col-ar">كان بروس جاي فريدمان أكثر تورطًا.</td>
+<td class="col-label" contenteditable="true">Not valid</td>
+<td class="col-comment" contenteditable="true">In the question, there is a literal translation of the word 'involved' which changed the meaning completely : <span style="font-family: Arial, Tahoma; text-align: right;">متورطًا usually means caught up in something negative or problematic, a more accurate translaton would be ..</span>أي كاتب شارك في</td>
+</tr>
+<tr>
+<td class="col-id">1873</td>
+<td class="col-en">Gil Hibben (born September 4, 1935) is an American custom knifemaker from Wyoming who is based in La Grange, Kentucky. Hibben designed the first line of Browning hunting knives in 1968, the American Kenpo Knife for Ed Parker, and the Rambo Knife for the films "Rambo III" and "Rambo".American Kenpo ( , pronounced KeMpo) is a martial art characterized by the use of quick and powerful strikes delivered from all of the body's natural weapons, powered by rapid stance transitions.</td>
+<td class="col-ar">جيل هيببن (ولد في 4 سبتمبر 1935) هو صانع سكاكين أمريكي من وايومنغ ويعيش في لا غرانج، كنتاكي. صمم هيببن أول مجموعة من سكاكين الصيد من براونينغ في 1968، وسكين الكينبو الأمريكي لإد باركر، وسكين رامبو للأفلام «رامبو 3» و«رامبو». الكينبو الأمريكي (ينطق كيمبو) هو فن قتالي يتميز باستخدام ضربات سريعة وقوية تُستخدم من جميع الأسلحة الطبيعية للجسم، مدعومة بتحولات سريعة في الوضعية.</td>
+<td class="col-en">Custom knifemaker Gil Hibben designed the knifes used by Ed Parker in this martial art characterized by the use of quick and powerful strikes delivered from the body's natural weapons, powered by rapid stance transitions?</td>
+<td class="col-ar">صانع السكاكين المخصص جيل هيببن صمم السكاكين المستخدمة من قبل إد باركر في هذا الفن القتالي الذي يتميز باستخدام ضربات سريعة وقوية تُستخدم من الأسلحة الطبيعية للجسم، مدعومة بتحولات سريعة في الوضعية؟</td>
+<td class="col-en">American Kenpo</td>
+<td class="col-ar">الكينبو الأمريكي</td>
+<td class="col-en">Ed Parker used Gil Hibben-designed knives in Shotokan Karate.</td>
+<td class="col-ar">استخدم إد باركر سكاكين مصممة من قبل جيل هيببن في شوتوكان كاراتيه.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true">Overall Ok, meaning is presereved, just a minor mistake : <span style="font-family: Arial, Tahoma; text-align: right;">الوضعية (transition) should be in plural : (</span>الوضعيات) </td>
+</tr>
+<tr>
+<td class="col-id">2098</td>
+<td class="col-en"> Festival's private label brands are supplied by SuperValu, with the majority under their Essential Everyday label.SuperValu, Inc. is an American retailing company.</td>
+<td class="col-ar">تُزوَّد العلامات التجارية الخاصة بمهرجان من قبل سوبر فالو، مع وجود الغالبية تحت علامتهم التجارية الأساسية «إيسينشال إيفريداي». سوبر فالو، إنك. هي شركة أمريكية للبيع بالتجزئة.</td>
+<td class="col-en">Which American retailing company supplied Festival's private label brands</td>
+<td class="col-ar">أي شركة أمريكية للبيع بالتجزئة زودت العلامات التجارية الخاصة بمهرجان؟</td>
+<td class="col-en">SuperValu, Inc.</td>
+<td class="col-ar">سوبر فالو، إنك.</td>
+<td class="col-en">Festival's private label brands are supplied by Walmart.</td>
+<td class="col-ar">تُزوَّد العلامات التجارية الخاصة بمهرجان من قبل وول مارت.</td>
+<td class="col-label" contenteditable="true">Not valid</td>
+<td class="col-comment" contenteditable="true">Here, the meaning is completely changed because the Arabic translation treated <b>Festival</b> as a common noun rather than a proper noun, which can lead to confusion. In this context, we are talking about the retail chain <strong data-start="390" data-end="402">Festival</strong>, not a festival as a form of celebration.</td>
+</tr>
+<tr>
+<td class="col-id">2041</td>
+<td class="col-en">James John Liautaud (January 12, 1964) is the founder, chairman, and majority owner of Jimmy John’s sandwich chain. Founded by Jimmy John Liautaud in 1983 and headquartered in Champaign, Illinois, in 30 years, the company has grown to more than 2,500 locations in all states except Alaska, Hawaii, Connecticut, Maine, New Hampshire, and Vermont.</td>
+<td class="col-ar">جيمس جون لياوتود (12 يناير 1964) هو مؤسس ورئيس ومالك أغلبية سلسلة ساندويتشات جيمي جون. تأسست من قبل جيمي جون لياوتود في 1983 ومقرها في شامبين، إلينوي، على مدار 30 عامًا، نمت الشركة لتصل إلى أكثر من 2500 موقع في جميع الولايات باستثناء ألاسكا، هاواي، كونيتيكت، مين، نيوهامبشير، وفيرمونت.</td>
+<td class="col-en">James John Liautaud, is the founder, chairman, and majority owner of Jimmy John’s, founded in which year?</td>
+<td class="col-ar">جيمس جون لياوتود، هو مؤسس ورئيس ومالك أغلبية جيمي جون، تأسست في أي سنة؟</td>
+<td class="col-en">1983</td>
+<td class="col-ar">1983</td>
+<td class="col-en">James John Liautaud founded Jimmy John’s in 1984.</td>
+<td class="col-ar">جيمس جون لياوتود أسس جيمي جون في 1984.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"><div style="text-align: right;">Overall Ok, few grammatical mistakes and style mistakes<font face="Arial, Tahoma">.</font> A more subtle formulation: في أي سنة تأسست الشركة instead of : تأسست في أي سنة</div></td>
+</tr>
+<tr>
+<td class="col-id">1295</td>
+<td class="col-en"> Additionally, the carrier is the third largest domestic airline in India in terms of passengers carried (after IndiGo and Jet Airways) with a market share of 13.5% as of July 2017. It is the largest airline in India by passengers carried and fleet size, with a 38.7% market share as of July 2017.</td>
+<td class="col-ar">بالإضافة إلى ذلك، تعتبر شركة الطيران هذه ثالث أكبر شركة طيران محلية في الهند من حيث عدد الركاب المنقولين (بعد إنديغو وجيت إيروايز) بحصة سوقية تبلغ 13.5% اعتبارًا من يوليو 2017. وهي أكبر شركة طيران في الهند من حيث عدد الركاب المنقولين وحجم الأسطول، بحصة سوقية تبلغ 38.7% اعتبارًا من يوليو 2017.</td>
+<td class="col-en">What  is a low-cost airline headquartered at Gurgaon, that is the largest airline in India, the third largest domestic airline being the flag carrier airline of India ?</td>
+<td class="col-ar">ما هي شركة الطيران منخفضة التكلفة التي تتخذ من غورغاون مقرًا لها، والتي تعتبر أكبر شركة طيران في الهند، وثالث أكبر شركة طيران محلية كونها شركة الطيران الوطنية للهند؟</td>
+<td class="col-en">IndiGo</td>
+<td class="col-ar">إنديغو</td>
+<td class="col-en">SpiceJet is a low-cost airline headquartered at Gurgaon, that is the largest airline in India, the third largest domestic airline being the flag carrier airline of India.</td>
+<td class="col-ar">سبايس جيت هي شركة طيران منخفضة التكلفة تتخذ من غورغاون مقرًا لها، والتي تعتبر أكبر شركة طيران في الهند، وثالث أكبر شركة طيران محلية كونها شركة الطيران الوطنية للهند.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">1069</td>
+<td class="col-en"> It is anchored by Boscov's, Kohl's, and Michaels. The company's first department store opened in September 1962. A group of investors purchased the company in 1986 from British-American Tobacco and took it public in 1992.</td>
+<td class="col-ar">تأسست بواسطة بوسكوف، كوهل، ومايكلز. افتتح أول متجر تابع للشركة في سبتمبر 1962. اشترت مجموعة من المستثمرين الشركة في 1986 من شركة التبغ البريطانية الأمريكية وأدرجتها في السوق العامة في 1992.</td>
+<td class="col-en">Fairlane Village Mall is anchred by Boscov's, Michaels, and a company whose first department store opened in September 1962, and that went public in what year?</td>
+<td class="col-ar">مركز تسوق فيرلين فيليدج هو مدعوم من بوسكوف، مايكلز، وشركة افتتح أول متجر لها في سبتمبر 1962، وأدرجت في السوق العامة في أي سنة؟</td>
+<td class="col-en">1992</td>
+<td class="col-ar">1992</td>
+<td class="col-en">The company went public in 1993.</td>
+<td class="col-ar">أدرجت الشركة في السوق العامة في 1993.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true">Overall OK, few grammatical and stylistic mistakes.</td>
+</tr>
+<tr>
+<td class="col-id">5112</td>
+<td class="col-en"> He was chief strategic officer of Disney and President, Strategy &amp; Development of Caesars Entertainment Corporation.Caesars Entertainment Corporation, is an American gaming corporation based in Paradise, Nevada that owns and operates over 50 casinos and hotels, and seven golf courses under several brands.</td>
+<td class="col-ar">كان كبير المسؤولين الاستراتيجيين في ديزني ورئيس قسم الاستراتيجية والتطوير في شركة كازينوهات سيزار. شركة كازينوهات سيزار هي شركة ألعاب أمريكية مقرها في بارادايس، نيفادا، تمتلك وتدير أكثر من 50 كازينو وفندق، وسبعة ملاعب جولف تحت عدة علامات تجارية.</td>
+<td class="col-en">Peter E Murphy, is an American businessman and founder of Wentworth Capital Management, he was chief strategic officer of Disney and President, Strategy &amp; Development of which American gaming corporation based in Paradise, Nevada that owns and operates over 50 casinos and hotels, and seven golf courses under several brands?</td>
+<td class="col-ar">بيتر إي مورفي، هو رجل أعمال أمريكي ومؤسس شركة وينتورث كابيتال مانجمنت، كان كبير المسؤولين الاستراتيجيين في ديزني ورئيس قسم الاستراتيجية والتطوير لأي شركة ألعاب أمريكية مقرها في بارادايس، نيفادا، تمتلك وتدير أكثر من 50 كازينو وفندق، وسبعة ملاعب جولف تحت عدة علامات تجارية؟</td>
+<td class="col-en">Caesars Entertainment Corporation</td>
+<td class="col-ar">شركة كازينوهات سيزار</td>
+<td class="col-en">Peter E Murphy was the CEO of Caesars Entertainment Corporation.</td>
+<td class="col-ar">كان بيتر إي مورفي الرئيس التنفيذي لشركة كازينوهات سيزار.</td>
+<td class="col-label" contenteditable="true">Acceptable</td>
+<td class="col-comment" contenteditable="true">The question is a bit awkward as there is literal translation of which to <span style="font-family: Arial, Tahoma; text-align: right;">أي , and it isn't a common style used in arabic: the question can start like this for example: </span>ما اسم الشركة الأمريكية للألعاب، التي يقع مقرها في باراديس، نيفادا، والتي تمتلك وتدير أكثر من 50 كازينو وفندق وسبعة ملاعب غولف تحت تسع علامات تجارية، والتي كان بيتر إي مورفي، الذي هو رجل أعمال أمريكي ومؤسس شركة وينتورث كابيتال مانجمنت، كبير المسؤولين الاستراتيجيين فيها ورئيس قسم الاستراتيجية والتطوير؟</td>
+</tr>
+<tr>
+<td class="col-id">560</td>
+<td class="col-en">"Home" is a song recorded by British singer Leah McFall, the runner-up on the second series of the BBC talent show "The Voice", featuring guest vocals from her show mentor will.i.am. This song also featured in the latest film, "The Book of Life".The Book of Life is a 2014 American 3D computer-animated musical fantasy adventure comedy film produced by Reel FX Creative Studios and distributed by 20th Century Fox.</td>
+<td class="col-ar">«هوم» هي أغنية سجلتها المغنية البريطانية ليا مكفال، التي كانت الوصيفة في الموسم الثاني من برنامج المواهب في بي بي سي «ذا فويس»، وتحتوي على أصوات ضيفية من معلمها في البرنامج ويل.آي.أم. كما ظهرت هذه الأغنية في الفيلم الأخير، «كتاب الحياة». «كتاب الحياة» هو فيلم كوميدي موسيقي خيالي مغامرات أمريكي ثلاثي الأبعاد تم إنتاجه بواسطة ريل إف إكس كرييتيف ستوديوز وتوزيعه بواسطة 20ث سينتشري فوكس.</td>
+<td class="col-en">What 2014 American 3D computer-animated musical fantasy adventure comedy film features a song recorded by British singer Leah McFall?</td>
+<td class="col-ar">ما هو الفيلم الكوميدي الموسيقي الخيالي المغامرات الأمريكي ثلاثي الأبعاد لعام 2014 الذي يحتوي على أغنية سجلتها المغنية البريطانية ليا مكفال؟</td>
+<td class="col-en">The Book of Life</td>
+<td class="col-ar">كتاب الحياة</td>
+<td class="col-en">The Book of Death</td>
+<td class="col-ar">كتاب الموت</td>
+<td class="col-label" contenteditable="true">Acceptable</td>
+<td class="col-comment" contenteditable="true">Few grammatical mistakes, also the year 2014  was omitted from the knowledge in arabic. </td>
+</tr>
+<tr>
+<td class="col-id">3982</td>
+<td class="col-en">Daryl Davis is an American R&amp;B and blues musician, author, actor and bandleader. Known for his energetic style of Boogie-woogie piano, Davis has played with such musicians as Chuck Berry, Jerry Lee Lewis, B. B. King, Bruce Hornsby, and Bill Clinton.Bruce Randall Hornsby (born November 23, 1954) is an American singer and keyboardist.</td>
+<td class="col-ar">داريل ديفيس هو موسيقي أمريكي في نوع آر أند بي والبلوز، مؤلف، ممثل وقائد فرقة. معروف بأسلوبه النشيط في عزف البيانو من نوع بوغي-ووجي، عزف ديفيس مع موسيقيين مثل تشاك بيري، جيري لي لويس، ب. ب. كينغ، بروس هورنزبي، وبيل كلينتون. بروس راندال هورنزبي (ولد في 23 نوفمبر 1954) هو مغني أمريكي وعازف بيانو.</td>
+<td class="col-en">R&amp;B and blues musician Daryl Davis performed with which famous American singer born on November 23, 1954?</td>
+<td class="col-ar">أي مغني أمريكي مشهور ولد في 23 نوفمبر 1954 عزف معه موسيقي آر أند بي والبلوز داريل ديفيس؟</td>
+<td class="col-en">Bruce Hornsby</td>
+<td class="col-ar">بروس هورنزبي</td>
+<td class="col-en">Daryl Davis performed with Bill Clinton.</td>
+<td class="col-ar">داريل ديفيس عزف مع بيل كلينتون.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"><br></td>
+</tr>
+<tr>
+<td class="col-id">2869</td>
+<td class="col-en">"Sugar Baby" is the final song on Bob Dylan's 2001 album "Love and Theft". The song shares its title with the Dock Boggs song, a recording Dylan is said to have treasured as a young folksinger in New York City. Boggs was first recorded in 1927 and again in 1929, although he worked primarily as a coal miner for most of his life.</td>
+<td class="col-ar">«سكر بيبي» هي الأغنية الأخيرة في ألبوم بوب ديلان لعام 2001 «الحب والسرقة». تشترك الأغنية في عنوانها مع أغنية دوك بوغز، وهي تسجيل يُقال إن ديلان قد اعتز به كفنان شاب في مدينة نيويورك. تم تسجيل بوغز لأول مرة في عام 1927 ومرة أخرى في عام 1929، على الرغم من أنه عمل بشكل أساسي كعامل منجم فحم لمعظم حياته.</td>
+<td class="col-en">Whose 2001 album was influence by a coal miner's records from the 1920?</td>
+<td class="col-ar">ألبوم من عام 2001 تأثر بسجلات عامل منجم الفحم من عشرينيات القرن الماضي؟</td>
+<td class="col-en">Bob Dylan</td>
+<td class="col-ar">بوب ديلان</td>
+<td class="col-en">The coal miner's records from 1920s influenced the 2001 album of Leonard Cohen.</td>
+<td class="col-ar">سجلات عامل المنجم من عشرينيات القرن الماضي أثرت على ألبوم عام 2001 لليونارد كوهين.</td>
+<td class="col-label" contenteditable="true">Acceptable</td>
+<td class="col-comment" contenteditable="true">The question in arabic is abit awkward as it is transated literally. An improved version: من هو الفنان الذي كان ألبومه الصادر عام 2001 متأثرًا بسجلات عمال الفحم من عشرينيات القرن الماضي؟</td>
+</tr>
+<tr>
+<td class="col-id">191</td>
+<td class="col-en">Let's Cheers to This is the second studio album by American post-hardcore band Sleeping with Sirens.Sleeping with Sirens is an American rock band from Orlando, Florida currently residing in Grand Rapids, Michigan.</td>
+<td class="col-ar">«لنحتفل بهذا» هو الألبوم الاستوديو الثاني لفرقة الروك الأمريكية بعد الهاردكور «سليبنج ويذ سايرنز». «سليبنج ويذ سايرنز» هي فرقة روك أمريكية من أورلاندو، فلوريدا، وتقيم حالياً في غراند رابيدز، ميشيغان.</td>
+<td class="col-en">The band that released the album "Let's Cheers to This" is from what Florida city?</td>
+<td class="col-ar">الفرقة التي أصدرت الألبوم «لنحتفل بهذا» من أي مدينة في فلوريدا؟</td>
+<td class="col-en">Orlando</td>
+<td class="col-ar">أورلاندو</td>
+<td class="col-en">Miami, but they moved to Michigan.</td>
+<td class="col-ar">ميامي، لكنهم انتقلوا إلى ميشيغان.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">184</td>
+<td class="col-en">The 2010 MTV Video Music Awards took place on September 12, 2010 at Nokia Theatre in Los Angeles, honoring the best music videos from the previous year. Chelsea Handler hosted the event, the first woman in sixteen years – since the 1994 MTV Video Music Awards – to do so. She hosted the late-night talk show "Chelsea Lately" on the E! network from 2007 to 2014, and released a documentary series, "Chelsea Does", on Netflix in January 2016.</td>
+<td class="col-ar">أقيمت جوائز موسيقى الفيديو من إم تي في لعام 2010 في 12 سبتمبر 2010 في مسرح نوكيا في لوس أنجلوس، تكريمًا لأفضل مقاطع الفيديو الموسيقية من العام السابق. استضافت تشيلسي هاندلر الحدث، وكانت أول امرأة تفعل ذلك منذ ستة عشر عامًا – منذ جوائز موسيقى الفيديو من إم تي في لعام 1994. استضافت برنامج المحادثة الليلية «تشيلسي ليتلي» على شبكة إي! من 2007 إلى 2014، وأصدرت سلسلة وثائقية، «تشيلسي دوز»، على نتفليكس في يناير 2016.</td>
+<td class="col-en">In which theatre in Los Angeles did the late-night talk show host of "Chelsea Lately" host the 2010 MTV Video Music Awards?</td>
+<td class="col-ar">في أي مسرح في لوس أنجلوس استضافت مقدمة برنامج المحادثة الليلية «تشيلسي ليتلي» جوائز موسيقى الفيديو من إم تي في لعام 2010؟</td>
+<td class="col-en">Nokia Theatre</td>
+<td class="col-ar">مسرح نوكيا</td>
+<td class="col-en">The 2010 MTV Video Music Awards took place in Nokia Hall.</td>
+<td class="col-ar">أقيمت جوائز موسيقى الفيديو من إم تي في لعام 2010 في قاعة نوكيا.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">880</td>
+<td class="col-en"> The album is dedicated to late actor Charles Bronson.Charles Bronson (born Charles Dennis Buchinsky; Lithuanian: "Karolis Dionyzas Bučinskis" ; November 3, 1921 – August 30, 2003) was an American actor.</td>
+<td class="col-ar">الألبوم مخصص للممثل الراحل تشارلز برونسون. تشارلز برونسون (ولد تشارلز دينيس بوخينسكي؛ ليتواني: "كاروليس ديونيزاس بوتشينسكي"؛ 3 نوفمبر 1921 – 30 أغسطس 2003) كان ممثلاً أمريكياً.</td>
+<td class="col-en">Violent Restitution is the fifth full-length album from the Canadian speed/thrash metal band Razor released in 1988, the album is dedicated to the late Charles Bronson, was an American actor, died on which date?</td>
+<td class="col-ar">ألبوم «فايولنت ريستيتيوشن» هو الألبوم الخامس الكامل من فرقة «رايزور» الكندية لموسيقى السبييد/ثراش ميتال، صدر في 1988، الألبوم مخصص للراحل تشارلز برونسون، الذي كان ممثلاً أمريكياً، توفي في أي تاريخ؟</td>
+<td class="col-en">August 30, 2003</td>
+<td class="col-ar">30 أغسطس 2003</td>
+<td class="col-en">Charles Bronson died on August 31, 2003.</td>
+<td class="col-ar">توفي تشارلز برونسون في 31 أغسطس 2003.</td>
+<td class="col-label" contenteditable="true">Acceptable</td>
+<td class="col-comment" contenteditable="true">The question is a bit awkaward, the last part could be replaced by this هذا الألبوم <span style="font-family: Arial, Tahoma; text-align: right;">مخصص </span> للممثل الأمريكي الراحل <strong data-start="294" data-end="312">تشارلز برونسون</strong>،  متى توفي هذا الأخير</td>
+</tr>
+<tr>
+<td class="col-id">2406</td>
+<td class="col-en">American Idol: Greatest Moments is the first "American Idol" soundtrack, with music from the first season of "American Idol". It contains two cover songs from both Kelly Clarkson and Justin Guarini, the winner and runner-up of the original season, one song from the remaining eight finalists, one song by all the finalists, and Clarkson's two songs from her debut single as bonus tracks.Justin Guarini (born Justin Eldrin Bell; October 28, 1978) is an American singer/musician, actor, host and producer, who in 2002 was the runner-up on the first season of "American Idol."</td>
+<td class="col-ar">«أمريكان آيدول: أعظم اللحظات» هو أول ألبوم موسيقي لـ«أمريكان آيدول»، ويحتوي على موسيقى من الموسم الأول لـ«أمريكان آيدول». يتضمن أغنيتين مغطاتين من كل من كيلي كلاركسون وجاستن غواريني، الفائز والوصيف في الموسم الأصلي، وأغنية واحدة من الثمانية المتسابقين المتبقيين، وأغنية واحدة من جميع المتسابقين، وأغنيتين لكلاركسون من أغنيتها المنفردة الأولى كمسارات إضافية. جاستن غواريني (ولد جاستن إلدري ن بيل؛ 28 أكتوبر 1978) هو مغني/موسيقي وممثل ومقدم ومنتج أمريكي، الذي كان في عام 2002 الوصيف في الموسم الأول من «أمريكان آيدول».</td>
+<td class="col-en">Who did the 2002 runner up sing two cover songs with on American Idol: Greatest Moments?</td>
+<td class="col-ar">مع من غنى الوصيف في 2002 أغنيتين مغطاتين في «أمريكان آيدول: أعظم اللحظات»؟</td>
+<td class="col-en">Kelly Clarkson</td>
+<td class="col-ar">كيلي كلاركسون</td>
+<td class="col-en">Justin Guarini sang three cover songs with Kelly Clarkson on American Idol: Greatest Moments.</td>
+<td class="col-ar">غنى جاستن غواريني ثلاث أغاني مغطاة مع كيلي كلاركسون في «أمريكان آيدول: أعظم اللحظات».</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true">There was a literal translation of tracks to مسارات. مسارات mean paths , routes, the correct translations would be أغاني but this didn't impact the context understanding very much. </td>
+</tr>
+<tr>
+<td class="col-id">2523</td>
+<td class="col-en">What's Love Got to Do with It is a 1993 American biographical film directed by Brian Gibson, loosely based on the life of Tina Turner. It stars Angela Bassett as Tina Turner and Laurence Fishburne as Ike Turner. An early pioneer of fifties rock and roll, he is most popularly known for his work in the 1960s and 1970s with his then-wife Tina Turner in the Ike &amp; Tina Turner Revue.</td>
+<td class="col-ar">فيلم «ما علاقة الحب بذلك» هو فيلم سيرة ذاتية أمريكي صدر في عام 1993 من إخراج براين جيبسون، مستند بشكل غير دقيق إلى حياة تينا تيرنر. يشارك في البطولة أنجيلا باسيت بدور تينا تيرنر ولورانس فيشبورن بدور آيك تيرنر. كأحد الرواد الأوائل لموسيقى الروك آند رول في الخمسينات، يُعرف بشكل شائع بعمله في الستينات والسبعينات مع زوجته آنذاك تينا تيرنر في عرض آيك وتينا تيرنر.</td>
+<td class="col-en">In which year did Lawrence Fishburne play an early pioneer of of fifties rock and roll?</td>
+<td class="col-ar">في أي عام لعب لورانس فيشبورن دور رائد مبكر لموسيقى الروك آند رول في الخمسينات؟</td>
+<td class="col-en">1993</td>
+<td class="col-ar">1993</td>
+<td class="col-en">Lawrence Fishburne played Ike Turner.</td>
+<td class="col-ar">لورانس فيشبورن لعب دور آيك تيرنر.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">5165</td>
+<td class="col-en">Fashion for Relief is a charitable organization founded in 2005 that has raised funds for various environmental and humanitarian causes. Its spokeswoman is Naomi Campbell, who attracts high-profile individuals in the fashion, film, music, and television industries to participate in the show.Naomi Elaine Campbell (born 22 May 1970) is an English model and actress.</td>
+<td class="col-ar">فاشن فور ريليف هي منظمة خيرية تأسست في 2005 وقد جمعت تبرعات لمجموعة متنوعة من القضايا البيئية والإنسانية. المتحدثة باسمها هي نعومي كامبل، التي تجذب شخصيات بارزة في مجالات الموضة والسينما والموسيقى والتلفزيون للمشاركة في العرض. نعومي إلين كامبل (ولدت في 22 مايو 1970) هي عارضة أزياء وممثلة إنجليزية.</td>
+<td class="col-en">What is the name of the American Actress who serves as spokeswoman for Fashion for Relief?</td>
+<td class="col-ar">ما اسم الممثلة الأمريكية التي تعمل كمتحدثة باسم فاشن فور ريليف؟</td>
+<td class="col-en">Naomi Campbell</td>
+<td class="col-ar">نعومي كامبل</td>
+<td class="col-en">Angelina Jolie is the spokeswoman for Fashion for Relief.</td>
+<td class="col-ar">أنجلينا جولي هي المتحدثة باسم فاشن فور ريليف.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">260</td>
+<td class="col-en">"That's My Pa" is a 1962 single by Sheb Wooley.Shelby Fredrick "Sheb" Wooley (April 10, 1921 – September 16, 2003) was a character actor and singer, best known for his 1958 novelty song "The Purple People Eater." He played Ben Miller, brother of Frank Miller, in the film "High Noon"; played Travis Cobb in "The Outlaw Josey Wales"; and also had a co-starring role as scout Pete Nolan in the television series "Rawhide."</td>
+<td class="col-ar">«ذا تاتس ماي با» هي أغنية صدرت في عام 1962 من أداء شاب وولي. شيلبي فريدريك «شاب» وولي (10 أبريل 1921 – 16 سبتمبر 2003) كان ممثلاً ومغنيًا، معروفًا بأغنيته الغريبة في عام 1958 «ذا بيربل بيبول إيتر». لعب دور بن ميلر، شقيق فرانك ميلر، في فيلم «هاي نون»؛ ولعب دور ترافيس كوب في «ذا أوتلاو جوزي ويلز»؛ وكان له أيضًا دور رئيسي ككشاف بيت نولان في المسلسل التلفزيوني «راوهيد».</td>
+<td class="col-en">The man that had a single titled "That's My Pa" played what character in the film "High Noon"?</td>
+<td class="col-ar">الرجل الذي لديه أغنية بعنوان «ذا تاتس ماي با» لعب أي شخصية في فيلم «هاي نون»؟</td>
+<td class="col-en">Ben Miller</td>
+<td class="col-ar">بن ميلر</td>
+<td class="col-en">Sheb Wooley played the character Ben.</td>
+<td class="col-ar">شاب وولي لعب الشخصية بن.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">4539</td>
+<td class="col-en">Christopher "Chris" Thompson (born 17 April 1981) is a British long-distance runner, who won the silver medal in the 10,000 metres at the 2010 European Athletics Championships in Barcelona, on 27 July 2010 behind his compatriot Mo Farah. In 2017 he indicated his intention to switch wholly to road racing following victory at his final track race, the 2017 IAAF Diamond League 5000 metres final.</td>
+<td class="col-ar">كريستوفر "كريس" تومسون (ولد في 17 أبريل 1981) هو عداء بريطاني لمسافات طويلة، فاز بالميدالية الفضية في سباق 10,000 متر في بطولة أوروبا لألعاب القوى 2010 في برشلونة، في 27 يوليو 2010 خلف مواطنه مو فرح. في 2017، أشار إلى نيته الانتقال بالكامل إلى سباقات الطرق بعد فوزه في آخر سباق له على المضمار، نهائي 5000 متر في دوري الماس 2017 التابع للاتحاد الدولي لألعاب القوى.</td>
+<td class="col-en">When did the person who finished ahead of Chris Thompson in the 10,000 metres at the 2010 European Athletics Championships announce his intention to switch wholly to road racing?</td>
+<td class="col-ar">متى أعلن الشخص الذي أنهى السباق قبل كريس تومسون في سباق 10,000 متر في بطولة أوروبا لألعاب القوى 2010 عن نيته الانتقال بالكامل إلى سباقات الطرق؟</td>
+<td class="col-en">2017</td>
+<td class="col-ar">2017</td>
+<td class="col-en">The person who won the 10,000 meters ahead of Chris Thompson never announced his intention to switch to road racing.</td>
+<td class="col-ar">الشخص الذي فاز بسباق 10,000 متر قبل كريس تومسون لم يعلن أبداً عن نيته الانتقال إلى سباقات الطرق.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true">Overall OK, minor grammatical mistakes</td>
+</tr>
+<tr>
+<td class="col-id">1546</td>
+<td class="col-en"> The series was hosted by NFL wide receiver Victor Cruz. With the Giants he won Super Bowl XLVI over the New England Patriots, and made the 2012 Pro Bowl.</td>
+<td class="col-ar">استضافت السلسلة لاعب كرة القدم الأمريكي فيكتور كروز. مع فريق جينتس، فاز بكأس السوبر 46 على نيو إنجلاند باتريوتس، وشارك في برو بول 2012.</td>
+<td class="col-en">What NFL team did the host of "The Challenge" play for when they won the Super Bowl?</td>
+<td class="col-ar">مع أي فريق في دوري كرة القدم الأمريكي لعب مضيف "التحدي" عندما فاز بكأس السوبر؟</td>
+<td class="col-en">With the Giants he won Super Bowl XLVI</td>
+<td class="col-ar">مع فريق جينتس فاز بكأس السوبر 46</td>
+<td class="col-en">Victor Cruz never won Super Bowl XLVI.</td>
+<td class="col-ar">فيكتور كروز لم يفز أبداً بكأس السوبر 46.</td>
+<td class="col-label" contenteditable="true">Not valid</td>
+<td class="col-comment" contenteditable="true">The meaning of knowledge in arabic was altered , as the translation of the series was hosted by NFL wid receiver.. was translated to 'The series hosted NFL wide receiver' </td>
+</tr>
+<tr>
+<td class="col-id">5362</td>
+<td class="col-en">The 2000 Molson Indy Vancouver was a Championship Auto Racing Teams (CART) motor race held on September 3, 2000 at Concord Pacific Place in Vancouver, British Columbia, Canada.Paul Anthony Tracy (born December 17, 1968) is a Canadian former professional auto racing driver who competed in CART, the Champ Car World Series and the IndyCar Series.</td>
+<td class="col-ar">سباق 2000 مولسون إندي فانكوفر كان سباق سيارات ضمن فرق سباقات السيارات (كارت) أقيم في 3 سبتمبر 2000 في مكان كونكورد باسيفيك في فانكوفر، كولومبيا البريطانية، كندا. بول أنطوني تريسي (ولد في 17 ديسمبر 1968) هو سائق سيارات سباق محترف كندي سابق تنافس في كارت، وسلسلة تشامب كار العالمية وسلسلة إندي كار.</td>
+<td class="col-en">The 2000 Molson Indy Vancouver was a Championship Auto Racing Teams (CART) motor race held on which date, at Concord Pacific Place in Vancouver, British Columbia, Canada, Paul Anthony Tracy, a Canadian former professional auto racing driver, won the race by less than half a second over his teammate?</td>
+<td class="col-ar">سباق 2000 مولسون إندي فانكوفر كان سباق سيارات ضمن فرق سباقات السيارات (كارت) أقيم في أي تاريخ، في مكان كونكورد باسيفيك في فانكوفر، كولومبيا البريطانية، كندا، فاز بول أنطوني تريسي، سائق سيارات سباق محترف كندي سابق، بالسباق بفارق أقل من نصف ثانية عن زميله؟</td>
+<td class="col-en">September 3, 2000</td>
+<td class="col-ar">3 سبتمبر 2000</td>
+<td class="col-en">Paul Anthony Tracy, the Canadian former professional auto racing driver won the race by less than half a second over his teammate in the 2000 Molson Indy Vancouver held in Canada.</td>
+<td class="col-ar">بول أنطوني تريسي، سائق سيارات سباق محترف كندي سابق، فاز بالسباق بفارق أقل من نصف ثانية عن زميله في سباق 2000 مولسون إندي فانكوفر الذي أقيم في كندا.</td>
+<td class="col-label" contenteditable="true">Acceptable</td>
+<td class="col-comment" contenteditable="true">Arabic formulation of the question is awkward , which makes the question not easily understandable. Few grammatical mistakes.</td>
+</tr>
+<tr>
+<td class="col-id">4431</td>
+<td class="col-en"> Professional basketball player Harrison Barnes read and spoke positively of the book. Barnes won an NBA championship with the Warriors in 2015.</td>
+<td class="col-ar">قرأ وتحدث لاعب كرة السلة المحترف هاريسون بارنز بشكل إيجابي عن الكتاب. فاز بارنز ببطولة الدوري الوطني لكرة السلة مع ووريورز في 2015.</td>
+<td class="col-en">Which professional basketball player won a NBA championship and spoke positively on the book "the 21 irrefutable laws of leadership"?</td>
+<td class="col-ar">أي لاعب كرة سلة محترف فاز ببطولة الدوري الوطني لكرة السلة وتحدث بشكل إيجابي عن الكتاب «القوانين الحادية والعشرون التي لا يمكن دحضها في القيادة»؟</td>
+<td class="col-en">Harrison Barnes</td>
+<td class="col-ar">هاريسون بارنز</td>
+<td class="col-en">Stephen Curry won an NBA championship and spoke positively about "The 21 Irrefutable Laws of Leadership".</td>
+<td class="col-ar">ستيفن كاري فاز ببطولة الدوري الوطني لكرة السلة وتحدث بشكل إيجابي عن «القوانين الحادية والعشرون التي لا يمكن دحضها في القيادة».</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">3328</td>
+<td class="col-en">Tom Amstutz (born August 30, 1955) is a former American football player and coach. Known as "Toledo Tom", he is a native of Toledo, Ohio.Toledo ( ) is a city in and the county seat of Lucas County, Ohio, United States. The city was founded by United States citizens in 1833 on the west bank of the Maumee River, and originally incorporated as part of Monroe County, Michigan Territory.</td>
+<td class="col-ar">توم أمتسوتز (ولد في 30 أغسطس 1955) هو لاعب ومدرب كرة قدم أمريكي سابق. يعرف باسم «توليدو توم»، وهو من مواليد توليدو، أوهايو. توليدو هي مدينة ومقر مقاطعة لوكاس في ولاية أوهايو، الولايات المتحدة. تأسست المدينة على يد مواطنين أمريكيين في عام 1833 على الضفة الغربية لنهر ماومي، وكانت في الأصل جزءًا من مقاطعة مونرو، إقليم ميشيغان.</td>
+<td class="col-en">Tom Amstutz is a native of a city founded on the west bank of what river?</td>
+<td class="col-ar">توم أمتسوتز هو من مواليد مدينة تأسست على الضفة الغربية لأي نهر؟</td>
+<td class="col-en">Maumee River</td>
+<td class="col-ar">نهر ماومي</td>
+<td class="col-en">Ohio River</td>
+<td class="col-ar">نهر أوهايو</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">1940</td>
+<td class="col-en">Julien Nitzberg (born 1965) is a US screenwriter, stage writer, lyricist, theater director and film director, best known in the film world as the director of the documentary "The Wild and Wonderful Whites of West Virginia".The Wild and Wonderful Whites of West Virginia is a 2009 documentary film directed by Julien Nitzberg, chronicling the White family of Boone County, West Virginia.</td>
+<td class="col-ar">جوليان نيتزبرغ (مواليد 1965) كاتب سيناريو أمريكي، كاتب مسرح، كاتب كلمات، مخرج مسرح ومخرج أفلام، معروف في عالم السينما كمخرج الفيلم الوثائقي «الأبيضون البرية والرائعون في ويست فيرجينيا». «الأبيضون البرية والرائعون في ويست فيرجينيا» هو فيلم وثائقي صدر في 2009 من إخراج جوليان نيتزبرغ، يتناول عائلة وايت في مقاطعة بون، ويست فيرجينيا.</td>
+<td class="col-en">Julien Nitzberg was the director of which documentary about a family in Boone County, West Virginia?</td>
+<td class="col-ar">كان جوليان نيتزبرغ مخرج أي فيلم وثائقي عن عائلة في مقاطعة بون، ويست فيرجينيا؟</td>
+<td class="col-en">The Wild and Wonderful Whites of West Virginia</td>
+<td class="col-ar">الأبيضون البرية والرائعون في ويست فيرجينيا</td>
+<td class="col-en">Julien Nitzberg directed a documentary about a family in West Virginia.</td>
+<td class="col-ar">جوليان نيتزبرغ أخرج فيلماً وثائقياً عن عائلة في ويست فيرجينيا.</td>
+<td class="col-label" contenteditable="true">Acceptable</td>
+<td class="col-comment" contenteditable="true">Awkward formulation of the question which makes it not easily understandable, a more polished version: ما هو الفيلم الوثائقي الذي أخرجه <strong data-start="356" data-end="374">جوليان نيتزبرغ</strong> ويتناول   قصة عائلة في مقاطعة بون، ولاية وست فرجينيا؟</td>
+</tr>
+<tr>
+<td class="col-id">4174</td>
+<td class="col-en">"Pilot" is the first episode of the television series "Studio 60 on the Sunset Strip". Written by series creator Aaron Sorkin, and directed by executive producer Thomas Schlamme, the episode introduces the chaotic behind-the-scenes depiction of a fictional "Saturday Night Live" type show also called "Studio 60 on the Sunset Strip".Aaron Benjamin Sorkin (born June 9, 1961) is an American screenwriter, director, producer and playwright. For writing "The Social Network", he won the Oscar for Best Adapted Screenplay, among other awards.</td>
+<td class="col-ar">«بايلوت» هي الحلقة الأولى من المسلسل التلفزيوني «ستوديو 60 أون ذا صنست ستريب». كتبها مبتكر المسلسل آرون سوركين، وأخرجها المنتج التنفيذي توماس شلامي، وتقدم الحلقة تصويرًا فوضويًا خلف الكواليس لعرض خيالي من نوع «ساترداي نايت لايف» يسمى أيضًا «ستوديو 60 أون ذا صنست ستريب». آرون بنجامين سوركين (ولد في 9 يونيو 1961) هو كاتب سيناريو ومخرج ومنتج وكاتب مسرحي أمريكي. عن كتابة «الشبكة الاجتماعية»، فاز بجائزة الأوسكار لأفضل سيناريو مقتبس، من بين جوائز أخرى.</td>
+<td class="col-en">The first episode of the television series "Studio 60 on the Sunset Strip" was written by what creator who also won the Oscar for Best Adapted Screenplay? for writing "The Social Network"?</td>
+<td class="col-ar">من هو المبتكر الذي كتب الحلقة الأولى من المسلسل التلفزيوني «ستوديو 60 أون ذا صنست ستريب» والذي فاز أيضًا بجائزة الأوسكار لأفضل سيناريو مقتبس عن كتابة «الشبكة الاجتماعية»؟</td>
+<td class="col-en">Aaron Sorkin</td>
+<td class="col-ar">آرون سوركين</td>
+<td class="col-en">The first episode was written by Martin Scorsese.</td>
+<td class="col-ar">تم كتابة الحلقة الأولى بواسطة مارتن سكورسيزي.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">5492</td>
+<td class="col-en">Click is a 2006 American science fiction comedy-drama film directed by Frank Coraci, written by Steve Koren and Mark O'Keefe, and produced by Adam Sandler, who also starred in the lead role.Adam Richard Sandler (born September 9, 1966) is an American actor, comedian, screenwriter, film producer, and musician.</td>
+<td class="col-ar">«كليك» هو فيلم كوميدي درامي خيال علمي أمريكي صدر في عام 2006 من إخراج فرانك كوراسي، كتب السيناريو ستيف كورين ومارك أوكيف، ومن إنتاج آدم ساندلر الذي قام أيضًا بدور البطولة. آدم ريتشارد ساندلر (ولد في 9 سبتمبر 1966) هو ممثل أمريكي، كوميدي، كاتب سيناريو، منتج أفلام، وموسيقي.</td>
+<td class="col-en">What American actor starred in the 2006 movie Click?</td>
+<td class="col-ar">أي ممثل أمريكي قام بدور البطولة في فيلم «كليك» عام 2006؟</td>
+<td class="col-en">Adam Sandler</td>
+<td class="col-ar">آدم ساندلر</td>
+<td class="col-en">The lead role actor's name is Richard.</td>
+<td class="col-ar">اسم الممثل الذي قام بدور البطولة هو ريتشارد.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true">Overall Ok, minor grammatical mistakes.</td>
+</tr>
+<tr>
+<td class="col-id">2447</td>
+<td class="col-en">Neetho (English: "With You" ) is a 2002 Telugu romance film directed by John Mahendran, starring Prakash Kovelamudi and Mahek Chahal in their debut roles.Mahek Chahal (born 1 February 1979) is a Norwegian actress and model who appears in Bollywood films.</td>
+<td class="col-ar">نيثو («معك») هو فيلم رومانسي تيلوجوي من عام 2002 من إخراج جون ماهيندران، وبطولة براكاش كوفيلامودي وماهيك تشاهال في أدوارهما الأولى. ماهيك تشاهال (ولدت في 1 فبراير 1979) هي ممثلة وعارضة أزياء نرويجية تظهر في أفلام بوليوود.</td>
+<td class="col-en">Neetho starred which actress born on 1 February 1979?</td>
+<td class="col-ar">من هي الممثلة التي مثلت في نيثو وولدت في 1 فبراير 1979؟</td>
+<td class="col-en">Mahek Chahal</td>
+<td class="col-ar">ماهيك تشاهال</td>
+<td class="col-en">Neetho starred a Norwegian actress.</td>
+<td class="col-ar">نيثو مثلت فيه ممثلة نرويجية.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">63</td>
+<td class="col-en">Chris Noonan (born 14 November 1952) is a Sydney-based Australian filmmaker and actor best known for the family film "Babe" (1995), for which he was nominated for both the Academy Award for Best Director and Academy Award for Best Adapted Screenplay.The Academy Award for Best Director (officially known as the Academy Award for Best Directing) is an award presented annually by the Academy of Motion Picture Arts and Sciences (AMPAS).</td>
+<td class="col-ar">كريس نونان (ولد في 14 نوفمبر 1952) هو مخرج وممثل أسترالي مقيم في سيدني، ويشتهر بفيلم العائلة «بيبي» (1995)، الذي تم ترشيحه لجائزة الأوسكار لأفضل مخرج وجائزة الأوسكار لأفضل سيناريو مقتبس. جائزة الأوسكار لأفضل مخرج (المعروفة رسميًا بجائزة الأوسكار لأفضل إخراج) هي جائزة تُمنح سنويًا من قبل أكاديمية فنون وعلوم الصور المتحركة.</td>
+<td class="col-en">Which organization presents the award in which Chris Noonan was nominated for his work in "Babe?"</td>
+<td class="col-ar">أي منظمة تقدم الجائزة التي تم ترشيح كريس نونان من أجل عمله في «بيبي»؟</td>
+<td class="col-en">Academy of Motion Picture Arts and Sciences</td>
+<td class="col-ar">أكاديمية فنون وعلوم الصور المتحركة</td>
+<td class="col-en">The award in which Chris Noonan was nominated for his work in "Babe" was presented by the Golden Globe.</td>
+<td class="col-ar">الجائزة التي تم ترشيح كريس نونان من أجل عمله في «بيبي» تم تقديمها من قبل الغولدن غلوب.</td>
+<td class="col-label" contenteditable="true">Acceptable</td>
+<td class="col-comment" contenteditable="true">The question formulation is a bit awkward, it's lacking a preposition it should be: أي منظمة تقدم الجائزة التي<span style="font-family: Arial, Tahoma; text-align: right;"> تم ترشيح </span>   كريس نونان لها  <span style="font-family: Arial, Tahoma; text-align: right;">من أجل </span> عمله في فيلم «بيبي»؟ </td>
+</tr>
+<tr>
+<td class="col-id">1305</td>
+<td class="col-en">Carlton House was a mansion in London, best known as the town residence of the Prince Regent for several decades from 1783.George IV (George Augustus Frederick; 12 August 1762 – 26 June 1830) was King of the United Kingdom of Great Britain and Ireland and of Hanover following the death of his father, George III, on 29 January 1820, until his own death ten years later. From 1811 until his accession, he served as Prince Regent during his father's final mental illness.</td>
+<td class="col-ar">كان كارلتون هاوس قصرًا في لندن، معروفًا بشكل أفضل كمقر إقامة المدينة للأمير الوصي لعدة عقود من 1783. جورج الرابع (جورج أوغسطس فريدريك؛ 12 أغسطس 1762 – 26 يونيو 1830) كان ملك المملكة المتحدة لبريطانيا العظمى وأيرلندا وهانوفر بعد وفاة والده، جورج الثالث، في 29 يناير 1820، حتى وفاته بعد عشر سنوات. من 1811 حتى توليه العرش، شغل منصب الأمير الوصي خلال المرض العقلي الأخير لوالده.</td>
+<td class="col-en">What Prince Regent likely stayed in Carlton House in 1811?</td>
+<td class="col-ar">أي أمير وصي من المحتمل أنه أقام في كارلتون هاوس في 1811؟</td>
+<td class="col-en">George IV</td>
+<td class="col-ar">جورج الرابع</td>
+<td class="col-en">Queen Victoria stayed there instead.</td>
+<td class="col-ar">كانت الملكة فيكتوريا قد أقامت هناك بدلاً من ذلك.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">3541</td>
+<td class="col-en">Citizen Cohn is a 1992 cable film covering the life of Joseph McCarthy's controversial chief counsel Roy Cohn.Joseph Raymond McCarthy (November 14, 1908 – May 2, 1957) was an American politician who served as U.S. Senator from the state of Wisconsin from 1947 until his death in 1957.</td>
+<td class="col-ar">فيلم «سيتيزن كوهين» هو فيلم كابل من عام 1992 يتناول حياة روي كوهين، المستشار القانوني المثير للجدل لجوزيف مكارثي. جوزيف ريموند مكارثي (14 نوفمبر 1908 – 2 مايو 1957) كان سياسيًا أمريكيًا شغل منصب سيناتور الولايات المتحدة من ولاية ويسكونسن من عام 1947 حتى وفاته في عام 1957.</td>
+<td class="col-en">The film Citizen Cohn follows the life of a man who was chief counsel to a Senator from which state?</td>
+<td class="col-ar">يتبع فيلم «سيتيزن كوهين» حياة رجل كان المستشار القانوني لسيناتور من أي ولاية؟</td>
+<td class="col-en">Wisconsin</td>
+<td class="col-ar">ويسكونسن</td>
+<td class="col-en">Citizen Cohn follows the life of a man who was the chief counsel to Senator McCarthy in his Senate hearings.</td>
+<td class="col-ar">يتبع فيلم «سيتيزن كوهين» حياة رجل كان المستشار القانوني للسيناتور مكارثي في جلسات استماع مجلس الشيوخ الخاصة به.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">2923</td>
+<td class="col-en"> He served with his brother Robert Rogers during the French and Indian War.Robert Rogers (7 November 1731 – 18 May 1795) was an American colonial frontiersman. Rogers served in the British army during both the French and Indian War and the American Revolution.</td>
+<td class="col-ar">خدم مع شقيقه روبرت روجرز خلال حرب فرنسا والهند. كان روبرت روجرز (7 نوفمبر 1731 – 18 مايو 1795) مستوطنًا أمريكيًا على الحدود. خدم روجرز في الجيش البريطاني خلال كل من حرب فرنسا والهند والثورة الأمريكية.</td>
+<td class="col-en">James Rogers served with what American colonial frontiersman, who was his brother, and who served in the British army during the French and Indian War, and the American revolution?</td>
+<td class="col-ar">مع أي مستوطن أمريكي على الحدود خدم جيمس روجرز، الذي كان شقيقه، والذي خدم في الجيش البريطاني خلال حرب فرنسا والهند والثورة الأمريكية؟</td>
+<td class="col-en">Robert Rogers</td>
+<td class="col-ar">روبرت روجرز</td>
+<td class="col-en">James Rogers served with his brother who was a British soldier.</td>
+<td class="col-ar">خدم جيمس روجرز مع شقيقه الذي كان جنديًا بريطانيًا.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">2377</td>
+<td class="col-en">Grand admiral is a historic naval rank, the highest rank in the several European navies that used it.Military ranks are a system of hierarchical relationships in armed forces, police, intelligence agencies or other institutions organized along military lines.</td>
+<td class="col-ar">الأميرال الكبير هو رتبة بحرية تاريخية، وهي أعلى رتبة في العديد من البحريات الأوروبية التي استخدمتها. الرتب العسكرية هي نظام من العلاقات الهرمية في القوات المسلحة، الشرطة، وكالات الاستخبارات أو مؤسسات أخرى منظمة على أسس عسكرية.</td>
+<td class="col-en">Grand Admiral a naval rank in one of the highest in the several European navies that use this system, what system are they using? </td>
+<td class="col-ar">الأميرال الكبير رتبة بحرية من بين الأعلى في العديد من البحريات الأوروبية التي تستخدم هذا النظام، ما هو النظام الذي يستخدمونه؟</td>
+<td class="col-en">Military ranks</td>
+<td class="col-ar">الرتب العسكرية</td>
+<td class="col-en">The European navies use a hierarchical rank system.</td>
+<td class="col-ar">تستخدم البحريات الأوروبية نظام رتب هرمي.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">1278</td>
+<td class="col-en">The use of the English language in most member countries of the Commonwealth of Nations was inherited from British colonisation. English is spoken as a first or second language in most of the Commonwealth. In a few countries, such as Cyprus and Malaysia, it does not have official status, but is widely used as a lingua franca. Mozambique is an exception – although English is widely spoken there, it is a former Portuguese colony which joined the Commonwealth in 1996.The Commonwealth of Nations is a voluntary association of 52 sovereign states.</td>
+<td class="col-ar">استخدام اللغة الإنجليزية في معظم الدول الأعضاء في كومنولث الأمم ورث من الاستعمار البريطاني. تُستخدم الإنجليزية كلغة أولى أو ثانية في معظم دول الكومنولث. في بعض الدول، مثل قبرص وماليزيا، لا تتمتع بوضع رسمي، لكنها تُستخدم على نطاق واسع كلغة تواصل. موزمبيق هي استثناء - على الرغم من أن الإنجليزية تُستخدم على نطاق واسع هناك، إلا أنها كانت مستعمرة برتغالية سابقة انضمت إلى الكومنولث في 1996. كومنولث الأمم هو جمعية طوعية تضم 52 دولة ذات سيادة.</td>
+<td class="col-en">In how many states of the Member states of the Commonwealth of Nations is English either spoken as first or second language or at least widely used?</td>
+<td class="col-ar">في كم دولة من الدول الأعضاء في كومنولث الأمم تُستخدم الإنجليزية كلغة أولى أو ثانية أو على الأقل تُستخدم على نطاق واسع؟</td>
+<td class="col-en">52</td>
+<td class="col-ar">52</td>
+<td class="col-en">English is not widely spoken in Mozambique, thereby reducing the number of Member States to less than 50.</td>
+<td class="col-ar">الإنجليزية ليست مستخدمة على نطاق واسع في موزمبيق، مما يقلل عدد الدول الأعضاء إلى أقل من 50.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">1814</td>
+<td class="col-en">The University of Hartford (UHart) is a private, independent, nonsectarian, coeducational university located mostly in West Hartford, Connecticut. Its 350 acre main campus touches portions of three municipalities: Bloomfield, Hartford, and West Hartford. The degree programs at the University of Hartford hold the highest levels of accreditation available in the US, including the Engineering Accreditation Commission of the Accreditation Board for Engineering and Technology (EAC/ABET), the Association to Advance Collegiate Schools of Business (AACSB), and the New England Association of Schools and Colleges-Commission on Institutions of Higher Education (NEASC-CIHE). With approximately 1,300 faculty members and more than 29,000 students, UMass Amherst is the largest public university in New England and is ranked as tied for the 27th best public university in the nation.</td>
+<td class="col-ar">جامعة هارتفورد هي جامعة خاصة ومستقلة وغير طائفية وتعليمية مختلطة تقع في الغالب في ويست هارتفورد، كونيتيكت. تمتد الحرم الجامعي الرئيسي الذي تبلغ مساحته 350 فدانًا ليشمل أجزاء من ثلاث بلديات: بلومفيلد، هارتفورد، وويست هارتفورد. تحمل برامج الدرجات العلمية في جامعة هارتفورد أعلى مستويات الاعتماد المتاحة في الولايات المتحدة، بما في ذلك لجنة اعتماد الهندسة التابعة لمجلس اعتماد الهندسة والتكنولوجيا، ورابطة تقدم كليات الأعمال، ورابطة نيو إنجلاند للمدارس والكليات - لجنة مؤسسات التعليم العالي. مع حوالي 1,300 عضو هيئة تدريس وأكثر من 29,000 طالب، تعتبر جامعة ماساتشوستس أمهرست أكبر جامعة عامة في نيو إنجلاند وتحتل المرتبة 27 كأفضل جامعة عامة في البلاد.</td>
+<td class="col-en">Which New England university has a larger main campus, University of Hartford or University of Massachusetts Amherst?</td>
+<td class="col-ar">أي جامعة في نيو إنجلاند لديها حرم جامعي رئيسي أكبر، جامعة هارتفورد أم جامعة ماساتشوستس أمهرست؟</td>
+<td class="col-en">University of Hartford</td>
+<td class="col-ar">جامعة هارتفورد</td>
+<td class="col-en">University of Massachusetts Amherst has a larger main campus.</td>
+<td class="col-ar">جامعة ماساتشوستس أمهرست لديها حرم جامعي رئيسي أكبر.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">2753</td>
+<td class="col-en">Maurice Blanchot (] ; 22 September 1907 – 20 February 2003) was a French writer, philosopher, and literary theorist.Georges Joseph Christian Simenon (] ; 13 February 1903 – 4 September 1989) was a Belgian writer. A prolific author who published nearly 500 novels and numerous short works, Simenon is best known as the creator of the fictional detective Jules Maigret.</td>
+<td class="col-ar">موريش بلانشو (] ; 22 سبتمبر 1907 – 20 فبراير 2003) كان كاتبًا فرنسيًا وفيلسوفًا ونظريًا أدبيًا. جورج جوزيف كريستيان سيمينون (] ; 13 فبراير 1903 – 4 سبتمبر 1989) كان كاتبًا بلجيكيًا. كاتب غزير الإنتاج نشر ما يقرب من 500 رواية والعديد من الأعمال القصيرة، ويعرف سيمينون بشكل أفضل كخالق للمحقق الخيالي جول مايجري.</td>
+<td class="col-en">Are both Maurice Blanchot and Georges Simenon writers?</td>
+<td class="col-ar">هل كان موريش بلانشو وجورج سيمينون كُتّابًا؟</td>
+<td class="col-en">yes</td>
+<td class="col-ar">نعم</td>
+<td class="col-en">Both Blanchot and Simenon were indeed writers.</td>
+<td class="col-ar">كان كل من بلانشو وسيمينون بالفعل كُتّابًا.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">919</td>
+<td class="col-en">The European School, Munich (ESM) is one of thirteen European Schools and one of three in Germany. First established in 1977, it moved to its current location in Neuperlach, a district in the south-east of Munich, in the state of Bavaria in 1981.Neuperlach is a borough in the south-east of the Bavarian capital Munich and is part of the city district no. 16 ( Perlach). It was built starting in 1967 east of the former village of Perlach on the ground of the former Perlacher Haid.</td>
+<td class="col-ar">مدرسة أوروبا، ميونيخ (إي إس إم) هي واحدة من ثلاث عشرة مدرسة أوروبية وواحدة من ثلاث في ألمانيا. تأسست لأول مرة في 1977، وانتقلت إلى موقعها الحالي في نويبرلاخ، وهو حي في جنوب شرق ميونيخ، في ولاية بافاريا في 1981. نويبرلاخ هو حي في جنوب شرق العاصمة البافارية ميونيخ وهو جزء من المنطقة الحضرية رقم 16 (بيرلاخ). تم بناؤه بدءًا من 1967 شرق القرية السابقة بيرلاخ على أرض هايد بيرلاشر السابقة.</td>
+<td class="col-en">In 1981 the European School, Munich moved to its current location in a borough that was built starting in what year?</td>
+<td class="col-ar">في 1981، انتقلت مدرسة أوروبا، ميونيخ إلى موقعها الحالي في حي تم بناؤه بدءًا من أي عام؟</td>
+<td class="col-en">1967</td>
+<td class="col-ar">1967</td>
+<td class="col-en">In 1981, the European School, Munich moved to a borough that was built in the late 19th century.</td>
+<td class="col-ar">في 1981، انتقلت مدرسة أوروبا، ميونيخ إلى حي تم بناؤه في أواخر القرن التاسع عشر.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">882</td>
+<td class="col-en">Samsung Scholarship was established in 2002 by Samsung to provide financial support, encouragement and opportunities to gifted Korean students pursuing higher education overseas, who have shown the capacity to become global leaders. It was established as Samsung Lee Kun-hee Scholarship, named after the current chairman of Samsung Group who succeeded Lee Byung-chul, the founder.Lee Kun-hee (Hangul:  ; Hanja:  ; ] ; born January 9, 1942) is a South Korean business magnate and the chairman of Samsung Group.</td>
+<td class="col-ar">تم تأسيس منحة سامسونغ في 2002 من قبل سامسونغ لتوفير الدعم المالي، والتشجيع، والفرص للطلاب الكوريين الموهوبين الذين يسعون للحصول على التعليم العالي في الخارج، والذين أظهروا القدرة على أن يصبحوا قادة عالميين. تم تأسيسها كمنحة لي كون-هي، نسبةً إلى رئيس مجموعة سامسونغ الحالي الذي خلف لي بيونغ-تشول، المؤسس. لي كون-هي (هانغول:  ; هانجا:  ; ] ; وُلِد في 9 يناير 1942) هو رجل أعمال كوري جنوبي ورئيس مجموعة سامسونغ.</td>
+<td class="col-en">In what year was the Korean student scholarship established by South Korean business magnate and the chairman of Samsung Group?</td>
+<td class="col-ar">في أي عام تم تأسيس منحة الطلاب الكوريين من قبل رجل الأعمال الكوري الجنوبي ورئيس مجموعة سامسونغ؟</td>
+<td class="col-en">2002</td>
+<td class="col-ar">2002</td>
+<td class="col-en">Samsung Scholarship was established in 2003.</td>
+<td class="col-ar">تم تأسيس منحة سامسونغ في 2003.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">3005</td>
+<td class="col-en">Dorothy Wolfers Nelkin ((1933--) 30, 1933 – (2003--) 28, 2003 ) was an American sociologist of science most noted for her work researching and chronicling the unsettled relationship between science and society at large. She was a supporter of the National Center for Science Education (NCSE), and in 1981 testified for the plaintiffs in McLean v. Arkansas.McLean v. Arkansas Board of Education, 529 F. Supp.</td>
+<td class="col-ar">دوروثي وولفرز نيلكين (1933--30، 1933 – (2003--28، 2003) كانت عالمة اجتماع أمريكية في مجال العلوم، معروفة بشكل خاص بعملها في البحث وتوثيق العلاقة غير المستقرة بين العلوم والمجتمع بشكل عام. كانت داعمة للمركز الوطني لتعليم العلوم (إن سي إيه إيه)، وفي عام 1981 شهدت لصالح المدعين في قضية مكلاين ضد أركنساس. مكلاين ضد مجلس تعليم أركنساس، 529 ف. سوب.</td>
+<td class="col-en">what was the birth year of a sociologist of science who testified for the plaintiffs in a case involving a state Board of Education?</td>
+<td class="col-ar">ما هو سنة ميلاد عالمة الاجتماع التي شهدت لصالح المدعين في قضية تتعلق بمجلس تعليم ولاية؟</td>
+<td class="col-en">1933</td>
+<td class="col-ar">1933</td>
+<td class="col-en">The sociologist's birth year was 1923.</td>
+<td class="col-ar">سنة ميلاد العالمة الاجتماعية كانت 1923.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">393</td>
+<td class="col-en">A Brandy Alexander is a brandy-based cocktail consisting of cognac, crème de cacao, and cream that became popular during the early 20th century.The paloma (Spanish for "dove") is a tequila-based cocktail.</td>
+<td class="col-ar">كوكتيل براندي ألكسندر هو كوكتيل يعتمد على البراندي ويتكون من الكونياك وكريم الكاكاو والكريمة، وقد أصبح شائعًا خلال أوائل القرن العشرين. البالومة (بالإسبانية تعني "حمامة") هي كوكتيل يعتمد على التكيلا.</td>
+<td class="col-en">Are a Brandy Alexander and a Paloma both Tequila based?</td>
+<td class="col-ar">هل كل من براندي ألكسندر والبالومة يعتمد على التكيلا؟</td>
+<td class="col-en">no</td>
+<td class="col-ar">لا</td>
+<td class="col-en">Yes, both cocktails are tequila infused.</td>
+<td class="col-ar">نعم، كلا الكوكتيلين يحتويان على التكيلا.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">1781</td>
+<td class="col-en">Lambic is a type of beer brewed in the Pajottenland region of Belgium southwest of Brussels and in Brussels itself at the Cantillon Brewery.Brasserie-Brouwerij Cantillon (or Cantillon Brewery) is a small Belgian traditional family brewery based in Anderlecht, Brussels and founded in 1900.</td>
+<td class="col-ar">لامبيك هو نوع من البيرة يُصنع في منطقة باجوتنلاند في بلجيكا جنوب غرب بروكسل وفي بروكسل نفسها في مصنع بيرة كانتيلون. مصنع بيرة كانتيلون (أو كانتيلون بروجيري) هو مصنع بيرة عائلي تقليدي صغير في بلجيكا يقع في أندرلخت، بروكسل، وقد تأسس في 1900.</td>
+<td class="col-en">Lambic is brewed in Brussels at a brewery founded in what year?</td>
+<td class="col-ar">في أي سنة تم تأسيس مصنع البيرة الذي يُصنع فيه لامبيك في بروكسل؟</td>
+<td class="col-en">1900</td>
+<td class="col-ar">1900</td>
+<td class="col-en">Lambic is brewed in the Cantillon Brewery in Brussels, and it's a very old brewery.</td>
+<td class="col-ar">لامبيك يُصنع في مصنع بيرة كانتيلون في بروكسل، وهو مصنع بيرة قديم جداً.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">5169</td>
+<td class="col-en">Cream ale is a style of American and Canadian beer, of which examples are often light in color and are well attenuated.Beer in Canada was introduced by European settlers in the seventeenth century. The Canadian Beer industry now plays an important role in Canadian identity, though globalization of the brewing industry has seen the major players in Canada acquired by, or merged with, foreign companies, notably its three largest beer producers, Labatt, Molson and Sleeman.</td>
+<td class="col-ar">البيرة الكريمية هي نوع من البيرة الأمريكية والكندية، وغالبًا ما تكون أمثلتها فاتحة اللون ومخففة بشكل جيد. تم تقديم البيرة في كندا من قبل المستوطنين الأوروبيين في القرن السابع عشر. تلعب صناعة البيرة الكندية الآن دورًا مهمًا في الهوية الكندية، على الرغم من أن العولمة في صناعة التخمير قد أدت إلى استحواذ الشركات الكبرى في كندا على شركات أجنبية، لا سيما أكبر ثلاثة منتجين للبيرة، لابات، مولسون وسليمان.</td>
+<td class="col-en">What beer led ot the creation of Cream ale?</td>
+<td class="col-ar">ما هي البيرة التي أدت إلى إنشاء البيرة الكريمية؟</td>
+<td class="col-en">Beer in Canada</td>
+<td class="col-ar">البيرة في كندا</td>
+<td class="col-en">The creation of Cream ale is credited to the French monarchy under Louis XIV.</td>
+<td class="col-ar">يُنسب إنشاء البيرة الكريمية إلى الملكية الفرنسية تحت لويس الرابع عشر.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">2893</td>
+<td class="col-en">A Bloodhound is a bright red strawberry cocktail made with gin, vermouth and strawberry coulis.A Bloody Mary is a cocktail containing vodka, tomato juice, and combinations of other spices and flavorings including Worcestershire sauce, Hot Sauce, piri piri sauce, beef consommé or bouillon, horseradish, celery, olives, salt, black pepper, cayenne pepper, lemon juice, lime juice and/or celery salt.</td>
+<td class="col-ar">بلاودهاوند هو كوكتيل من الفراولة الحمراء الزاهية مصنوع من الجن، والفيرموث، وخلطة الفراولة. بلاودي ماري هو كوكتيل يحتوي على الفودكا، وعصير الطماطم، ومزيج من التوابل والنكهات الأخرى بما في ذلك صلصة ورشيستير، وهاوت صوص، وصلصة بيري بيري، ومرق اللحم أو المرق، والفجل، والكرفس، والزيتون، والملح، والفلفل الأسود، والفلفل الحار، وعصير الليمون، وعصير الليمون الأخضر و/أو ملح الكرفس.</td>
+<td class="col-en">A Bloodhound and a Bloody Mary are both what type of a drink?</td>
+<td class="col-ar">بلاودهاوند وبلاودي ماري هما من أي نوع من المشروبات؟</td>
+<td class="col-en">cocktail</td>
+<td class="col-ar">كوكتيل</td>
+<td class="col-en">A Bloodhound and a Bloody Mary are both alcoholic beverages.</td>
+<td class="col-ar">بلاودهاوند وبلاودي ماري هما مشروبات كحولية.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">1254</td>
+<td class="col-en">The Old Fashioned is a cocktail made by muddling sugar with bitters, then adding alcohol, such as whiskey or brandy, and a twist of citrus rind.A gin and tonic is a highball cocktail made with gin and tonic water poured over ice. It is usually garnished with a slice or wedge of lime.</td>
+<td class="col-ar">القديمة هي كوكتيل مصنوع من خلط السكر مع المر، ثم إضافة الكحول، مثل الويسكي أو البراندي، وقطعة من قشر الحمضيات. الجين والتونيك هو كوكتيل عالي مصنوع من الجين وماء التونيك يصب فوق الثلج. عادة ما يتم تزيينه بشريحة أو قطعة من الليمون.</td>
+<td class="col-en">Which of the following is usually garnished with a slice of lime: Old Fashioned or Gin and tonic?</td>
+<td class="col-ar">أي من التالي عادة ما يتم تزيينه بشريحة من الليمون: القديمة أم الجين والتونيك؟</td>
+<td class="col-en">gin and tonic</td>
+<td class="col-ar">الجين والتونيك</td>
+<td class="col-en">Old Fashioned is typically garnished with an orange twist.</td>
+<td class="col-ar">القديمة عادة ما يتم تزيينها بلفافة من البرتقال.</td>
+<td class="col-label" contenteditable="true">Acceptable</td>
+<td class="col-comment" contenteditable="true">Here there was a literal translation of The Old Fashioned  , it is a proper noun, it should be kept as it is. But despite this the meaning wasn't impacted very much.</td>
+</tr>
+<tr>
+<td class="col-id">44</td>
+<td class="col-en"> In the episode, Homer starts a bowling team with Moe, Apu, and Otto. When Mr. Burns discovers the team was funded with his money, he insists on joining. He is the school bus driver for Springfield Elementary School.</td>
+<td class="col-ar">في الحلقة، يبدأ هومر فريق بولينغ مع مو، أبو، وأوتو. عندما يكتشف السيد بيرنز أن الفريق تم تمويله من ماله، يصر على الانضمام. هو سائق حافلة المدرسة لمدرسة سبرينغفيلد الابتدائية.</td>
+<td class="col-en">Who funds the bowling team that includes the school bus driver for Springfield Elementary School?</td>
+<td class="col-ar">من يمول فريق البولينغ الذي يضم سائق حافلة المدرسة لمدرسة سبرينغفيلد الابتدائية؟</td>
+<td class="col-en">Mr. Burns</td>
+<td class="col-ar">السيد بيرنز</td>
+<td class="col-en">The bowling team is self-funded.</td>
+<td class="col-ar">فريق البولينغ ممول ذاتياً.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true">Overall ok, slight grammatical mistakes.</td>
+</tr>
+<tr>
+<td class="col-id">1655</td>
+<td class="col-en"> In 1982 James became head coach at David W. Carter High School in Dallas, Texas.David Wendel Carter High School (commonly referred to as Dallas Carter) is a public high school located in the Oak Cliff area of Dallas, Texas (USA).</td>
+<td class="col-ar">في عام 1982، أصبح جيمس مدربًا رئيسيًا في مدرسة ديفيد و. كارتر الثانوية في دالاس، تكساس. مدرسة ديفيد ويندل كارتر الثانوية (المعروفة عمومًا باسم دالاس كارتر) هي مدرسة ثانوية عامة تقع في منطقة أوك كليف في دالاس، تكساس (الولايات المتحدة الأمريكية).</td>
+<td class="col-en">Where was the public high school at which Freddie James became the head coach located?</td>
+<td class="col-ar">أين كانت المدرسة الثانوية العامة التي أصبح فريدي جيمس مدربًا رئيسيًا فيها؟</td>
+<td class="col-en">Oak Cliff area of Dallas</td>
+<td class="col-ar">منطقة أوك كليف في دالاس</td>
+<td class="col-en">South Dallas, near Oak Cliff.</td>
+<td class="col-ar">جنوب دالاس، بالقرب من أوك كليف.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true">Overall ok, slight stylistic mistakes.</td>
+</tr>
+<tr>
+<td class="col-id">2125</td>
+<td class="col-en">Hollis/Brookline High School is a public school located in Hollis, New Hampshire, serving the towns of Hollis and Brookline.Brookline is a town in Hillsborough County, New Hampshire, United States. Brookline is home to the Talbot-Taylor Wildlife Sanctuary, Potanipo Pond, and the Brookline Covered Bridge.</td>
+<td class="col-ar">مدرسة هوليس/بروكلين الثانوية هي مدرسة عامة تقع في هوليس، نيوهامشير، وتخدم مدينتي هوليس وبروكلين. بروكلين هي مدينة في مقاطعة هيلزبورو، نيوهامشير، الولايات المتحدة. بروكلين هي موطن ملاذ تالبت-تايلور للحياة البرية، بركة بوتانيبو، وجسر بروكلين المغطى.</td>
+<td class="col-en">Which wildlife sanctuary is located in the town in which the Hollis/Brookline High School services?</td>
+<td class="col-ar">ما هو ملاذ الحياة البرية الموجود في المدينة التي تخدمها مدرسة هوليس/بروكلين الثانوية؟</td>
+<td class="col-en">Talbot-Taylor Wildlife Sanctuary</td>
+<td class="col-ar">ملاذ تالبت-تايلور للحياة البرية</td>
+<td class="col-en">The Hollis/Brookline High School is located in the Talbot-Taylor Wildlife Sanctuary.</td>
+<td class="col-ar">مدرسة هوليس/بروكلين الثانوية تقع في ملاذ تالبت-تايلور للحياة البرية.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true">Overall Ok, slight stylistic and grammatical mistakes.</td>
+</tr>
+<tr>
+<td class="col-id">4428</td>
+<td class="col-en">Fraser Heights Secondary is a public high school in an upper-class neighbourhood of Surrey, British Columbia part of School District 36 Surrey.Surrey is a city in the province of British Columbia, Canada.</td>
+<td class="col-ar">مدرسة فريزر هايتس الثانوية هي مدرسة ثانوية حكومية في حي راقٍ في ساري، كولومبيا البريطانية، وهي جزء من منطقة التعليم 36 ساري. ساري هي مدينة في مقاطعة كولومبيا البريطانية، كندا.</td>
+<td class="col-en">What country is Fraser Heights Secondary School in?</td>
+<td class="col-ar">في أي دولة تقع مدرسة فريزر هايتس الثانوية؟</td>
+<td class="col-en">Canada</td>
+<td class="col-ar">كندا</td>
+<td class="col-en">Fraser Heights Secondary School is in North America.</td>
+<td class="col-ar">مدرسة فريزر هايتس الثانوية تقع في أمريكا الشمالية.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">5054</td>
+<td class="col-en">The Ozark School District #14 is a public school district in western Arkansas, based in Ozark, Arkansas, serving most of northern Franklin County and a small portion of western Johnson County. The district, most notably the high school, is most famous for its mascot, the Hillbilly.Hillbilly is a term (often derogatory) for people who dwell in rural, mountainous areas in the United States, primarily in Appalachia and the Ozarks.</td>
+<td class="col-ar">منطقة مدارس أوزارك #14 هي منطقة مدارس عامة في غرب أركنساس، ومقرها في أوزارك، أركنساس، وتخدم معظم شمال مقاطعة فرانكلين وجزء صغير من غرب مقاطعة جونسون. المنطقة، وخاصة المدرسة الثانوية، مشهورة بشكل خاص تميمة لها، وهي هيلبيلي. هيلبيلي هو مصطلح (غالبًا ما يكون مهينًا) للأشخاص الذين يعيشون في المناطق الريفية الجبلية في الولايات المتحدة، وخاصة في أبالاتشيا وأوزارك.</td>
+<td class="col-en">The Ozark School District's mascot is named after an often derogatory term for people who dwell in rural, mountainous areas of what country?</td>
+<td class="col-ar">تميمة منطقة مدارس أوزارك سميت على اسم مصطلح غالبًا ما يكون مهينًا للأشخاص الذين يعيشون في المناطق الريفية الجبلية في أي دولة؟</td>
+<td class="col-en">the United States</td>
+<td class="col-ar">الولايات المتحدة</td>
+<td class="col-en">The Ozark School District's mascot is named after an often derogatory term for people who dwell in rural, mountainous areas of France.</td>
+<td class="col-ar">تميمة منطقة مدارس أوزارك سميت على اسم مصطلح غالبًا ما يكون مهينًا للأشخاص الذين يعيشون في المناطق الريفية الجبلية في فرنسا.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true">Overall ok, slight grammatical and stylistic mistakes.</td>
+</tr>
+<tr>
+<td class="col-id">46</td>
+<td class="col-en">R Adams Cowley (July 25, 1917 – October 27, 1991), the "Father of Trauma Medicine," was an American surgeon considered a pioneer in emergency medicine and the treatment of shock trauma. He is also known for being one of the first surgeons to perform open-heart surgery and invented both a surgical clamp that bears his name and a prototype pacemaker that was used by Dwight D. Eisenhower.Dwight David "Ike" Eisenhower ( ; October 14, 1890 – March 28, 1969) was an American politician and Army general who served as the 34th President of the United States from 1953 until 1961.</td>
+<td class="col-ar">آر آدامز كاولي (25 يوليو 1917 – 27 أكتوبر 1991)، المعروف بـ"أب طب الطوارئ"، كان جراحًا أمريكيًا يُعتبر رائدًا في طب الطوارئ وعلاج صدمات الصدمة. كما أنه معروف بأنه كان من أوائل الجراحين الذين أجروا جراحة القلب المفتوح واخترع كل من مشبك جراحي يحمل اسمه ونموذج أولي لجهاز تنظيم ضربات القلب الذي استخدمه دوايت د. أيزنهاور. دوايت ديفيد "آيك" أيزنهاور (14 أكتوبر 1890 – 28 مارس 1969) كان سياسيًا أمريكيًا وجنرالًا في الجيش، شغل منصب الرئيس الرابع والثلاثين للولايات المتحدة من 1953 حتى 1961.</td>
+<td class="col-en">Who developed the prototype pacemaker used by the 34th President of the USA?</td>
+<td class="col-ar">من الذي طور النموذج الأولي لجهاز تنظيم ضربات القلب الذي استخدمه الرئيس الرابع والثلاثون للولايات المتحدة؟</td>
+<td class="col-en">R Adams Cowley</td>
+<td class="col-ar">آر آدامز كاولي</td>
+<td class="col-en">R Adams Cowley's surgical clamp was a favorite tool of President Eisenhower.</td>
+<td class="col-ar">كان مشبك جراحة آر آدامز كاولي أداة مفضلة للرئيس أيزنهاور.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">3868</td>
+<td class="col-en"> He also founded the Colorado Sickle Cell Foundation, a non-profit organization focused on bringing awareness to sufferers of sickle-cell anemia.Sickle-cell disease (SCD) is a group of blood disorders typically inherited from a person's parents. The most common type is known as sickle-cell anaemia (SCA).</td>
+<td class="col-ar">أسس أيضًا مؤسسة كولورادو للأنيميا المنجلية، وهي منظمة غير ربحية تركز على زيادة الوعي لدى المصابين بمرض الأنيميا المنجلية. مرض الأنيميا المنجلية هو مجموعة من اضطرابات الدم التي تُورث عادةً من والدي الشخص. النوع الأكثر شيوعًا يُعرف باسم الأنيميا المنجلية.</td>
+<td class="col-en">What is another name for the blood disorder Emmanuel Ntima Weyi founded a non-profit in support of?</td>
+<td class="col-ar">ما هو الاسم الآخر لاضطراب الدم الذي أسسه إيمانويل نطيمه ويي لدعم غير الربحي؟</td>
+<td class="col-en">Sickle-cell disease</td>
+<td class="col-ar">مرض الأنيميا المنجلية</td>
+<td class="col-en">Hemolytic anemia with sickling disorders.</td>
+<td class="col-ar">فقر الدم الانحلالي مع اضطرابات المنجل.</td>
+<td class="col-label" contenteditable="true">Not valid</td>
+<td class="col-comment" contenteditable="true">In the question, the Arabic translation implies that we are asking for another name of the blood disorder that Emmanuel Ntima Weyi created (as if he invented the disease), rather than asking for the name of the organization he founded in support of it.</td>
+</tr>
+<tr>
+<td class="col-id">1031</td>
+<td class="col-en">The George Washington University Hospital is located in Washington, D.C. in the United States.The Psychiatric Institute of Washington (PIW) is an acute (104 bed) psychiatric hospital in Washington, D.C. Opened in 1967, PIW is a short-term, private hospital.</td>
+<td class="col-ar">مستشفى جامعة جورج واشنطن يقع في واشنطن، دي سي في الولايات المتحدة. المعهد النفسي في واشنطن هو مستشفى نفسي حاد (104 سرير) في واشنطن، دي سي. افتتح في 1967، المعهد النفسي هو مستشفى خاص قصير الأمد.</td>
+<td class="col-en">In what city is George Washington University Hospital and Psychiatric Institute of Washington located?</td>
+<td class="col-ar">في أي مدينة يقع مستشفى جامعة جورج واشنطن والمعهد النفسي في واشنطن؟</td>
+<td class="col-en">Washington, D.C.</td>
+<td class="col-ar">واشنطن، دي سي.</td>
+<td class="col-en">George Washington University Hospital and Psychiatric Institute of Washington are two different hospitals located in different cities.</td>
+<td class="col-ar">مستشفى جامعة جورج واشنطن والمعهد النفسي في واشنطن هما مستشفيان مختلفان يقعان في مدن مختلفة.</td>
+<td class="col-label" contenteditable="true">Acceptable</td>
+<td class="col-comment" contenteditable="true">The Arabic translation of the question is a bit awkward. It reads as if we are asking in which city the hospitals and psychiatric institute are located in Washington, which makes it feel like the answer is already included in the question.</td>
+</tr>
+<tr>
+<td class="col-id">4995</td>
+<td class="col-en"> The chromaffin cells release catecholamines: ~80% of Adrenaline (Epinephrine) and ~20% of Noradrenaline (Norepinephrine) into systemic circulation for systemic effects on multiple organs (similarly to secretory neurones of the hypothalamus), and can also send paracrine signals.Epinephrine, also known as adrenalin or adrenaline, is a hormone, neurotransmitter, and medication. Epinephrine is normally produced by both the adrenal glands and certain neurons.</td>
+<td class="col-ar">تقوم خلايا الكرومافين بإفراز الكاتيكولامينات: حوالي 80% من الأدرينالين (إبينفرين) وحوالي 20% من النورأدرينالين (نورإبينفرين) في الدورة الدموية العامة لتأثيرات نظامية على عدة أعضاء (بشكل مشابه للعصبونات الإفرازية في الوطاء)، ويمكنها أيضًا إرسال إشارات باراكرين. الإبينفرين، المعروف أيضًا باسم الأدرينالين، هو هرمون وناقل عصبي ودواء. يتم إنتاج الإبينفرين عادةً بواسطة كل من الغدد الكظرية وبعض العصبونات.</td>
+<td class="col-en">What hormone produced by both the adrenal glands and certain neurons is released by chromaffin cells?</td>
+<td class="col-ar">ما هو الهرمون الذي يتم إنتاجه بواسطة كل من الغدد الكظرية وبعض العصبونات والذي يتم إفرازه بواسطة خلايا الكرومافين؟</td>
+<td class="col-en">Epinephrine</td>
+<td class="col-ar">إبينفرين</td>
+<td class="col-en">Noradrenaline is released by chromaffin cells.</td>
+<td class="col-ar">يتم إفراز النورأدرينالين بواسطة خلايا الكرومافين.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">1999</td>
+<td class="col-en">Rafael Irizarry is a professor of biostatistics at the Harvard T.H. Chan School of Public Health and professor of biostatistics and computational biology at the Dana–Farber Cancer Institute.Dana–Farber Cancer Institute is a comprehensive cancer treatment and research center in Boston, Massachusetts.</td>
+<td class="col-ar">رافائيل إيريزاري أستاذ في الإحصاء الحيوي في مدرسة هارفارد تي إتش تشان للصحة العامة وأستاذ في الإحصاء الحيوي وعلم الأحياء الحاسوبي في معهد دانا-فاربر للسرطان. معهد دانا-فاربر للسرطان هو مركز شامل لعلاج السرطان والبحث في بوسطن، ماساتشوستس.</td>
+<td class="col-en">In which State is the Dana-Farber Cancer Institute located?</td>
+<td class="col-ar">في أي ولاية يقع معهد دانا-فاربر للسرطان؟</td>
+<td class="col-en">Massachusetts</td>
+<td class="col-ar">ماساتشوستس</td>
+<td class="col-en">Dana-Farber Cancer Institute is located in Manhattan, New York.</td>
+<td class="col-ar">معهد دانا-فاربر للسرطان يقع في مانهاتن، نيويورك.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">1342</td>
+<td class="col-en">Millbrook, also known as Chalfont, is a neighbourhood in the Northeast section of Philadelphia, Pennsylvania, United States.Philadelphia Mills (formerly Franklin Mills) is an enclosed shopping mall located in Northeast Philadelphia, bordering Bensalem in Bucks County and 15 mi outside Center City. Formerly named for Benjamin Franklin, the mall houses 200 stores, a movie theatre, two food courts, and seven theme restaurants and was visited by an estimated 18 million people in 2006.</td>
+<td class="col-ar">ميلبروك، المعروف أيضًا باسم تشالفونت، هو حي في القسم الشمالي الشرقي من فيلادلفيا، بنسلفانيا، الولايات المتحدة. فيلادلفيا ميلز (المعروفة سابقًا باسم فرانكلين ميلز) هو مركز تسوق مغلق يقع في شمال شرق فيلادلفيا، ويجاور بنسالم في مقاطعة باكس ويبعد 15 ميلاً عن وسط المدينة. سُمّي سابقًا باسم بنيامين فرانكلين، يحتوي المركز على 200 متجر، وصالة سينما، ومحطتين للطعام، وسبعة مطاعم ذات طابع خاص، وزاره حوالي 18 مليون شخص في عام 2006.</td>
+<td class="col-en">Which enclosed shopping mall was formerly named for Benjamin Franklin and is next to the Millbrook, Philadelphia neighbourhood?</td>
+<td class="col-ar">ما هو مركز التسوق المغلق الذي سُمّي سابقًا باسم بنيامين فرانكلين والذي يقع بجوار حي ميلبروك في فيلادلفيا؟</td>
+<td class="col-en">Philadelphia Mills</td>
+<td class="col-ar">فيلادلفيا ميلز</td>
+<td class="col-en">The Gallery is an enclosed shopping mall named for Benjamin Franklin located in Millbrook, Philadelphia.</td>
+<td class="col-ar">ذا غاليري هو مركز تسوق مغلق سُمّي باسم بنيامين فرانكلين ويقع في ميلبروك، فيلادلفيا.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">3204</td>
+<td class="col-en"> The Venetian is owned and operated by Las Vegas Sands. Its resorts feature accommodations, gaming and entertainment, convention and exhibition facilities, restaurants and clubs, as well as an art and science museum in Singapore.</td>
+<td class="col-ar">تملك وتدير «لاس فيغاس ساندز» «الفينيسي». تحتوي منتجعاتها على أماكن إقامة، وألعاب، وترفيه، ومرافق للمؤتمرات والمعارض، ومطاعم ونوادي، بالإضافة إلى متحف للفن والعلوم في سنغافورة.</td>
+<td class="col-en">A Singapore art and science museum is among the attractions run by which Las Vegas company, owners of the Venetian?</td>
+<td class="col-ar">أي شركة من لاس فيغاس، مالكي «الفينيسي»، تدير متحف الفن والعلوم في سنغافورة من بين المعالم السياحية؟</td>
+<td class="col-en">Las Vegas Sands</td>
+<td class="col-ar">لاس فيغاس ساندز</td>
+<td class="col-en">The Singapore museum is owned by MGM.</td>
+<td class="col-ar">المتحف في سنغافورة مملوك لـ«إم جي إم».</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">3995</td>
+<td class="col-en">Giant Barn Swing is a Screamin' Swing style amusement ride designed by S&amp;S Worldwide at Silver Dollar City in Branson, Missouri. Assembly for this ride began in January 2007, and it was opened on April 14, 2007. Opened on May 1, 1960, the park is located between Branson and Branson West off of Missouri Route 76 on the Indian Point peninsula of Table Rock Lake.</td>
+<td class="col-ar">جايانت بارن سوينغ هو لعبة ملاهي من طراز سكريمين' سوينغ صممتها شركة إس آند إس وورلدوايد في سيلفر دولار سيتي في برانسون، ميزوري. بدأت عملية تجميع هذه اللعبة في يناير 2007، وافتتحت في 14 أبريل 2007. افتتح المنتزه في 1 مايو 1960، ويقع بين برانسون وبرانسون ويست على طريق ميزوري 76 في شبه جزيرة إنديان بوينت من بحيرة تيبل روك.</td>
+<td class="col-en">Which ride at the theme park located between Branson and Branson West off of Missouri Route 76 on the Indian Point peninsula of Table Rock Lake opened on April 14, 2007?</td>
+<td class="col-ar">ما هي اللعبة في مدينة الملاهي الواقعة بين برانسون وبرانسون ويست على طريق ميزوري 76 في شبه جزيرة إنديان بوينت من بحيرة تيبل روك التي افتتحت في 14 أبريل 2007؟</td>
+<td class="col-en">Giant Barn Swing</td>
+<td class="col-ar">جايانت بارن سوينغ</td>
+<td class="col-en">The ride opened in January 2007.</td>
+<td class="col-ar">افتتحت اللعبة في يناير 2007.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">2293</td>
+<td class="col-en"> It is today served well by its extensive rail network centering on East and West Croydon stations, from where London Overground, First Capital Connect and Southern operate to most parts of Greater London, Surrey, Sussex, Hampshire and the East of England.First Capital Connect (FCC) was a British train operating company, owned by FirstGroup, that operated the Thameslink Great Northern franchise from April 2006 to September 2014.</td>
+<td class="col-ar">تُخدم اليوم بشكل جيد من خلال شبكة السكك الحديدية الواسعة التي تتركز حول محطتي كرويدون الشرقية والغربية، حيث تعمل خدمات لندن أوفرغراوند، فيرست كابيتال كونيكت وساذرن إلى معظم أجزاء لندن الكبرى، ساري، ساسكس، هامبشاير وشرق إنجلترا. كانت فيرست كابيتال كونيكت (إف سي سي) شركة بريطانية لتشغيل القطارات، مملوكة لشركة فيرست غروب، التي كانت تدير امتياز ثامزلينك غريت نورذرن من أبريل 2006 إلى سبتمبر 2014.</td>
+<td class="col-en">What company services Croydon and operated the Thameslink Great Northern franchise?</td>
+<td class="col-ar">ما هي الشركة التي تخدم كرويدون وكانت تدير امتياز ثامزلينك غريت نورذرن؟</td>
+<td class="col-en">First Capital Connect</td>
+<td class="col-ar">فيرست كابيتال كونيكت</td>
+<td class="col-en">East and West Croydon stations are serviced by First Great Western</td>
+<td class="col-ar">تُخدم محطتا كرويدون الشرقية والغربية بواسطة فيرست غريت ويسترن</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true">Overall OK, slight stylistic and grammatical errors.</td>
+</tr>
+<tr>
+<td class="col-id">1277</td>
+<td class="col-en">Robinsons Novaliches (formerly known as Robinsons Place Novaliches and Robinsons Nova Market) is a shopping mall in Fairview owned and operated by Robinsons Malls, the second largest mall operator in the Philippines.Robinsons Galleria (also known as Robinsons Galleria Ortigas) is a mixed-use complex and shopping mall located at EDSA corner Ortigas Avenue, Quezon City just near SM Megamall.</td>
+<td class="col-ar">روبنسونز نوفاليشس (المعروف سابقًا باسم روبنسونز بلايس نوفاليشس وروبنسونز نوفا ماركت) هو مركز تسوق في فيرفيو مملوك ومدار من قبل روبنسونز مولز، ثاني أكبر مشغل لمراكز التسوق في الفلبين. روبنسونز غاليريا (المعروفة أيضًا باسم روبنسونز غاليريا أورتيغاس) هو مجمع متعدد الاستخدامات ومركز تسوق يقع عند تقاطع إيدسا مع شارع أورتيغاس، مدينة كويزون بالقرب من إس إم ميغامول.</td>
+<td class="col-en">Who is the operator of two malls in Quezon City, one of which on the EDSA corner near Ortigas Avenue?</td>
+<td class="col-ar">من هو مشغل المركزين التجاريين في مدينة كويزون، أحدهما عند تقاطع إيدسا بالقرب من شارع أورتيغاس؟</td>
+<td class="col-en">Robinsons Malls</td>
+<td class="col-ar">روبنسونز مولز</td>
+<td class="col-en">SM Supermalls</td>
+<td class="col-ar">إس إم سوبرمولز</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">429</td>
+<td class="col-en">Corydalis (Greek "korydalís" "crested lark") is a genus of about 470 species of annual and perennial herbaceous plants in the Papaveraceae family, native to the temperate Northern Hemisphere and the high mountains of tropical eastern Africa.Cedrus (common English name cedar) is a genus of coniferous trees in the plant family Pinaceae.</td>
+<td class="col-ar">كوريداليس (بالإغريقية "كوريوداليس" "الزرزور المتوج") هو جنس يضم حوالي 470 نوعًا من النباتات العشبية السنوية والدائمة في عائلة الخشخاش، موطنها نصف الكرة الشمالي المعتدل والجبال العالية في شرق أفريقيا الاستوائية. سيدروس (الاسم الشائع بالإنجليزية الأرز) هو جنس من الأشجار الصنوبرية في عائلة الصنوبر.</td>
+<td class="col-en">Both Corydalis and Cedrus are what level of classification in the naming system?</td>
+<td class="col-ar">ما هو مستوى التصنيف لكل من كوريداليس وسيدروس في نظام التسمية؟</td>
+<td class="col-en">genus</td>
+<td class="col-ar">جنس</td>
+<td class="col-en">Corydalis and Cedrus are not in the same scientific classification.</td>
+<td class="col-ar">كوريداليس وسيدروس ليسا في نفس التصنيف العلمي.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">2331</td>
+<td class="col-en"> Sirenians are thought to have a 50-million-year-old fossil record (early Eocene-recent). It is one of four living species of the order Sirenia, which also includes three species of manatees. The dugong is the only strictly marine herbivorous mammal.</td>
+<td class="col-ar">يُعتقد أن السيريانيين لديهم سجل أحفوري يعود إلى 50 مليون سنة (من العصر الإيوسيني المبكر حتى الآن). وهو واحد من أربعة أنواع حية من رتبة السيريانية، والتي تشمل أيضًا ثلاثة أنواع من خراف البحر. الدوغونغ هو الثديي العشبي البحري الوحيد بشكل صارم.</td>
+<td class="col-en">How old is the fossil record of the order that contains the only strictly marine herbivorous mammal?</td>
+<td class="col-ar">كم عمر السجل الأحفوري للرتبة التي تحتوي على الثديي العشبي البحري الوحيد بشكل صارم؟</td>
+<td class="col-en">50-million-year-old fossil record</td>
+<td class="col-ar">سجل أحفوري يعود إلى 50 مليون سنة</td>
+<td class="col-en">The fossil record is 55 million years old.</td>
+<td class="col-ar">السجل الأحفوري عمره 55 مليون سنة.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true">Overall Ok, some grammatical and literal translation mistakes.</td>
+</tr>
+<tr>
+<td class="col-id">2971</td>
+<td class="col-en"> The Type I is based on the Type 38 rifle and utilizes a Carcano action, but retains the Arisaka/Mauser type 5-round box magazine.Mauser, begun as Königliche Waffen Schmieden, is a German arms manufacturer.</td>
+<td class="col-ar">النوع الأول يعتمد على بندقية النوع 38 ويستخدم آلية كاركانو، لكنه يحتفظ بمخزن صندوقي من النوع أريساكا/ماوزر بسعة 5 طلقات. ماوزر، التي بدأت كـ كونيغليش فافن شمييدن، هي شركة ألمانية لصناعة الأسلحة.</td>
+<td class="col-en">Type I Rifle retains the box magazine that is by the arms manufacturer of what nationality?</td>
+<td class="col-ar">بندقية النوع الأول تحتفظ بالمخزن الصندوقي الذي صنعه مصنع الأسلحة من أي جنسية؟</td>
+<td class="col-en">German</td>
+<td class="col-ar">ألماني</td>
+<td class="col-en">The Type I Rifle retains the box magazine that is made by a European arms manufacturer.</td>
+<td class="col-ar">بندقية النوع الأول تحتفظ بالمخزن الصندوقي الذي صنعه مصنع أسلحة أوروبي.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true">Overall OK , slight grammatical mistakes. </td>
+</tr>
+<tr>
+<td class="col-id">650</td>
+<td class="col-en">Dicksonia is a genus of tree ferns in the order Cyatheales.Hardenbergia is a small genus of leguminous vines from Australia.</td>
+<td class="col-ar">ديكسونيا هو جنس من السرخس الشجري في ترتيب سياثيالس. هاردنبرغيا هو جنس صغير من الكروم البقولية من أستراليا.</td>
+<td class="col-en">Dicksonia and Hardenbergia, are found in Australia?</td>
+<td class="col-ar">هل توجد ديكسونيا وهاردنبرغيا في أستراليا؟</td>
+<td class="col-en">no</td>
+<td class="col-ar">لا</td>
+<td class="col-en">Yes, both Dicksonia and Hardenbergia are native to Australia.</td>
+<td class="col-ar">نعم، كلا من ديكسونيا وهاردنبرغيا موطنهما أستراليا.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">2349</td>
+<td class="col-en"> One focus of his work has been the research of J. B. S. Haldane.John Burdon Sanderson Haldane ( ; 5 November 1892 – 1 December 1964) was a British-born scientist known for his work in the study of physiology, genetics, evolutionary biology, and in mathematics, where he made innovative contributions to the fields of statistics and biostatistics.</td>
+<td class="col-ar">كان أحد مجالات عمله هو بحث ج. ب. س. هالدين. جون بردون ساندرسون هالدين (؛ 5 نوفمبر 1892 – 1 ديسمبر 1964) كان عالماً بريطانياً معروفاً بأعماله في دراسة الفسيولوجيا، وعلم الوراثة، وعلم الأحياء التطوري، وفي الرياضيات، حيث قدم مساهمات مبتكرة في مجالات الإحصاء والإحصاء الحيوي.</td>
+<td class="col-en">Dronamraju Krishna Rao focused his work on the research of this british-born scientist who passed on 1 december what year?</td>
+<td class="col-ar">ركز درونامراجو كريشنا راو عمله على بحث هذا العالم البريطاني الذي توفي في 1 ديسمبر أي سنة؟</td>
+<td class="col-en">1964</td>
+<td class="col-ar">1964</td>
+<td class="col-en">Dronamraju Krishna Rao focused on the research of J. B. S. Haldane, who passed away in the 1960s.</td>
+<td class="col-ar">ركز درونامراجو كريشنا راو على بحث ج. ب. س. هالدين، الذي توفي في الستينيات.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true">Overall Ok, slight grammatical mistakes.</td>
+</tr>
+<tr>
+<td class="col-id">1046</td>
+<td class="col-en">The Norwegian Buhund is a breed of dog of the spitz type. The Buhund is used as an all purpose farm and herding dog, as well as watch dog and a nanny dog. They are scent hounds, bred to hunt foxes by scent.</td>
+<td class="col-ar">البوهوند النرويجي هو سلالة من الكلاب من نوع السبيتز. يُستخدم البوهوند ككلب مزرعة متعدد الأغراض وككلب رعي، بالإضافة إلى كلب حراسة وطفل. هم كلاب صيد، تم تربيتها لصيد الثعالب عن طريق الشم.</td>
+<td class="col-en">Which dog has more traits, the Norwegian Buhund, or the English Foxhound?</td>
+<td class="col-ar">أي كلب لديه ميزات أكثر، البوهوند النرويجي، أم الفوكساند الإنجليزي؟</td>
+<td class="col-en">The Norwegian Buhund</td>
+<td class="col-ar">البوهوند النرويجي</td>
+<td class="col-en">The English Foxhound has more traits.</td>
+<td class="col-ar">الفوكساند الإنجليزي لديه ميزات أكثر.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true">Overall Ok, some minor grammatical mistakes. </td>
+</tr>
+<tr>
+<td class="col-id">2567</td>
+<td class="col-en"> The two give a final farewell to their friends in Quahog, Rhode Island, but along the way to their destination, they decide to stop in Cleveland's hometown of Stoolbend, Virginia." before co-creating "The Cleveland Show".</td>
+<td class="col-ar">يودع الاثنان أصدقائهما وداعًا نهائيًا في كواهوج، رود آيلاند، ولكن في طريقهما إلى وجهتهما، يقرران التوقف في مسقط رأس كليفلاند، ستولبند، فيرجينيا." قبل أن يشاركا في إنشاء "ذا كليفلاند شو".</td>
+<td class="col-en">For what television show co-created by Richard Appel featured a pilot episode in which the main character visits his hometown of Stoolbend, Virginia?</td>
+<td class="col-ar">ما هو برنامج التلفزيون الذي شارك في إنشائه ريتشارد أبيل والذي تضمن حلقة تجريبية يزور فيها الشخصية الرئيسية مسقط رأسه في ستولبند، فيرجينيا؟</td>
+<td class="col-en">"The Cleveland Show"</td>
+<td class="col-ar">"ذا كليفلاند شو"</td>
+<td class="col-en">"Family Guy" had a pilot episode in which the main character visits Stoolbend, Virginia.</td>
+<td class="col-ar">"فاميلي غاي" كان لديه حلقة تجريبية يزور فيها الشخصية الرئيسية ستولبند، فيرجينيا.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">1729</td>
+<td class="col-en">Fenbendazole (Hoechst brand names "Panacur" and "Safe-Guard", Intervet "Panacur" and "Panacur Rabbit") is a broad spectrum benzimidazole anthelmintic used against gastrointestinal parasites including: giardia, roundworms, hookworms, whipworms, the "Taenia" genus of tapeworms (but not effective against "Dipylidium caninum", a common dog tapeworm), pinworms, aelurostrongylus, paragonimiasis, strongyles and strongyloides and can be administered to sheep, cattle, horses, fish, dogs, cats, rabbits and seals. Drug interactions may occur if salicylanilides like dibromsalan and niclosamide are co-administered.Dipylidium caninum, also called the flea tapeworm, double-pore tapeworm, or cucumber tapeworm (in reference to the shape of its cucumber-seed-like proglottids, though these also resemble grains of rice or sesame seeds), is a cyclophyllid cestode that infects organisms afflicted with fleas and canine chewing lice, including dogs, cats, and sometimes human pet-owners, especially children.</td>
+<td class="col-ar">فينبندازول (أسماء علامة هوشت "باناكور" و"سيف-غارد"، إنترفيت "باناكور" و"باناكور رابيت") هو طارد للديدان واسع الطيف من فئة البنزيميدازول يُستخدم ضد الطفيليات المعوية بما في ذلك: الجيارديا، الديدان المستديرة، الديدان الشصية، الديدان الشريطية من جنس "تينيا" (لكن ليس فعالاً ضد "ديبيليديوم كانينوم"، وهو ديدان شريطية شائعة في الكلاب)، الديدان الدبوسية، الأيلورسترانغيليس، باراجونيميازيس، سترونجيليس وسترونجيوليدس ويمكن إعطاؤه للأغنام، الماشية، الخيول، الأسماك، الكلاب، القطط، الأرانب والأختام. قد تحدث تفاعلات دوائية إذا تم إعطاء الساليسيلانيليدات مثل ديبرومسالان ونيكلوساميد معًا. ديبيليديوم كانينوم، المعروف أيضًا باسم ديدان الشريط البرغوثية، أو ديدان الشريط ذات الفتحتين، أو ديدان الشريط الخيارية (في إشارة إلى شكل بروجلوتيداته التي تشبه بذور الخيار، على الرغم من أن هذه تشبه أيضًا حبات الأرز أو بذور السمسم)، هو كيسيد من نوع سيكلوفيليد يصيب الكائنات الحية التي تعاني من البراغيث وقمل المضغ الكلابي، بما في ذلك الكلاب، القطط، وأحيانًا أصحاب الحيوانات الأليفة من البشر، خاصة الأطفال.</td>
+<td class="col-en">Fenbendazole is ineffective against which parasite that is also called the flea tapeworm?</td>
+<td class="col-ar">فينبندازول غير فعال ضد أي طفيلي يُعرف أيضًا باسم ديدان الشريط البرغوثية؟</td>
+<td class="col-en">Dipylidium caninum</td>
+<td class="col-ar">ديبيليديوم كانينوم</td>
+<td class="col-en">Fenbendazole is not effective against the roundworms that do not have hooks.</td>
+<td class="col-ar">فينبندازول غير فعال ضد الديدان المستديرة التي لا تحتوي على خطافات.</td>
+<td class="col-label" contenteditable="true">Acceptable</td>
+<td class="col-comment" contenteditable="true">A seal is wrongly translated in the knowledge part in arabic, but this doesn't alter the overall meaning. The question is a bit awkward in arabic which makes it not easily understandable.</td>
+</tr>
+<tr>
+<td class="col-id">2639</td>
+<td class="col-en"> Vazquez grew up just outside the city of Monterrey to a doctor and an engineer.Monterrey (] ), is the capital and largest city of the northeastern state of Nuevo León, in Mexico.</td>
+<td class="col-ar">نشأ فاسكيز خارج مدينة مونتيري لوالد طبيب ووالد مهندس. مونتيري هي عاصمة وأكبر مدينة في ولاية نويفو ليون الشمالية الشرقية في المكسيك.</td>
+<td class="col-en">Of the cities Abdiel Vázquez has lived in, which one was the capital of Nuevo Leon?</td>
+<td class="col-ar">من بين المدن التي عاش فيها عبديل فاسكيز، أي واحدة كانت عاصمة نويفو ليون؟</td>
+<td class="col-en">Monterrey</td>
+<td class="col-ar">مونتيري</td>
+<td class="col-en">Abdiel Vázquez grew up in a town near Nuevo León.</td>
+<td class="col-ar">نشأ عبديل فاسكيز في بلدة قريبة من نويفو ليون.</td>
+<td class="col-label" contenteditable="true">Acceptable</td>
+<td class="col-comment" contenteditable="true">In the knowledge part, the translation in arabic of to a doctor and engineer implies that the father of Vasquez was a doctor and engineer at the same time, which make this part a bit ambiguous.</td>
+</tr>
+<tr>
+<td class="col-id">1949</td>
+<td class="col-en"> This genus is characterized by presence of three petals (along with the genera "Stussenia" &amp; "Lithobium") as opposed to five in the other members of the family. It is native to tropical America, from southern Mexico and Guatemala to Ecuador and Bolivia.</td>
+<td class="col-ar">يمتاز هذا الجنس بوجود ثلاث بتلات (بالإضافة إلى الأجناس «ستوسينيا» و«ليثوبيوم») على عكس الخمسة في الأعضاء الآخرين من العائلة. وهو موطنه أمريكا الاستوائية، من جنوب المكسيك وغواتيمالا إلى الإكوادور وبوليفيا.</td>
+<td class="col-en">Are Sonerila and Carludovica both genus of plants ?</td>
+<td class="col-ar">هل «سونيرلا» و«كارلودوفيكا» كلاهما جنس من النباتات؟</td>
+<td class="col-en">yes</td>
+<td class="col-ar">نعم</td>
+<td class="col-en">Sonerila and Carludovica are not the same genus of plants.</td>
+<td class="col-ar">«سونيرلا» و«كارلودوفيكا» ليسا نفس الجنس من النباتات.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"><br></td>
+</tr>
+<tr>
+<td class="col-id">3831</td>
+<td class="col-en">Barbarossa is a plasticine-shaping German-style board game for 3 to 6 players, designed by Klaus Teuber in and published in 1988 by Kosmos in German and by Rio Grande Games in English.Crokinole ( ) is a dexterity board game similar in various ways to pitchnut, carrom, marbles, and shove ha'penny, with elements of shuffleboard and curling reduced to table-top size.</td>
+<td class="col-ar">بارباروسا هي لعبة لوحية على الطراز الألماني مصنوعة من الصلصال، مخصصة من 3 إلى 6 لاعبين، صممها كلاوس تيوبر ونشرت في عام 1988 بواسطة كوسموس بالألمانية وبواسطة ريو غراندي غيمز بالإنجليزية. كروكينول هي لعبة لوحية تتطلب المهارة، تشبه بطرق مختلفة لعبة بيتش نات، وكاروم، والكرات، ولعبة شوف هابيني، مع عناصر من شافل بورد وكيرلينغ مصغرة إلى حجم الطاولة.</td>
+<td class="col-en">Are both Barbarossa and Crokinole board games?</td>
+<td class="col-ar">هل كل من بارباروسا وكروكينول ألعاب لوحية؟</td>
+<td class="col-en">yes</td>
+<td class="col-ar">نعم</td>
+<td class="col-en">No, Crokinole is not a board game.</td>
+<td class="col-ar">لا، كروكينول ليست لعبة لوحية.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">2247</td>
+<td class="col-en">Titan is a fantasy board game for two to six players, designed by Jason B. McAllister and David A. Trampier.Balderdash is a board game of bluffing and trivia created by Laura Robinson and Paul Toyne of Toronto, Ontario, Canada.</td>
+<td class="col-ar">تايتان هي لعبة لوحية خيالية للاعبين من اثنين إلى ستة، صممها جيسون ب. مكاليستر وديفيد أ. ترامبيير. بالدر داش هي لعبة لوحية تعتمد على الخداع والمعرفة أنشأتها لورا روبنسون وبول توين من تورونتو، أونتاريو، كندا.</td>
+<td class="col-en">Titan and Balderdash, are which specific type of entertainment?</td>
+<td class="col-ar">تايتان وبالدر داش، ما هو النوع المحدد من الترفيه؟</td>
+<td class="col-en">board game</td>
+<td class="col-ar">لعبة لوحية</td>
+<td class="col-en">Titan and Balderdash are both tabletop games.</td>
+<td class="col-ar">تايتان وبالدر داش هما لعبتان على الطاولة.</td>
+<td class="col-label" contenteditable="true">Acceptable</td>
+<td class="col-comment" contenteditable="true">The arabic translation of the question is a bit awkward which makes it not easily understandable, it's like that the question is detached from the subject , a correct translation would be : تيتان وبالدر داش، هما أي نوع محدد من وسائل الترفيه؟</td>
+</tr>
+<tr>
+<td class="col-id">3752</td>
+<td class="col-en">Twister is a game of physical skill, produced by Milton Bradley Company and Winning Moves, that has been inducted into the American National Toy Hall of Fame.Squatter is a board game that was launched at the Royal Melbourne Show in 1962, invented by Robert Crofton Lloyd.</td>
+<td class="col-ar">تويستر هي لعبة مهارة بدنية، تم إنتاجها بواسطة شركة ميلتون برادلي وونينغ موفز، وقد تم إدخالها في قاعة مشاهير الألعاب الوطنية الأمريكية. سكواتر هي لعبة لوحية تم إطلاقها في عرض ملبورن الملكي في 1962، اخترعها روبرت كروفتون لويد.</td>
+<td class="col-en">Twister and Squatter, are what type of entertainment?</td>
+<td class="col-ar">تويستر وسكواتر، ما نوع الترفيه الذي يمثلانه؟</td>
+<td class="col-en">game</td>
+<td class="col-ar">لعبة</td>
+<td class="col-en">Twister and Squatter are both physical activities.</td>
+<td class="col-ar">تويستر وسكواتر هما نشاطان بدنيان.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">2383</td>
+<td class="col-en">Monopoly Junior is a simplified version of the board game Monopoly, designed for young children.Codenames is a 2015 board game designed by Vlaada Chvátil.</td>
+<td class="col-ar">مونوبولي جونيور هو نسخة مبسطة من لعبة اللوح مونوبولي، مصممة للأطفال الصغار. كود نيمز هي لعبة لوح تم تصميمها في عام 2015 بواسطة فلافا تشفاطيل.</td>
+<td class="col-en">Monopoly Junior and Codenames, are which specific forms of entertainment?</td>
+<td class="col-ar">مونوبولي جونيور وكود نيمز، ما هي الأشكال المحددة من الترفيه؟</td>
+<td class="col-en">board game</td>
+<td class="col-ar">لعبة لوح</td>
+<td class="col-en">Monopoly Junior and Codenames are both classic board games.</td>
+<td class="col-ar">مونوبولي جونيور وكود نيمز هما لعبتان كلاسيكيتان من ألعاب اللوح.</td>
+<td class="col-label" contenteditable="true">Acceptable</td>
+<td class="col-comment" contenteditable="true">The question is awkward as the subjects are detached from the question, also some minor grammatical errors.</td>
+</tr>
+<tr>
+<td class="col-id">2873</td>
+<td class="col-en">Retro City Rampage is a downloadable open world action-adventure video game for WiiWare, Xbox Live Arcade, PlayStation Network and Microsoft Windows developed by Vblank Entertainment. It is a parody of retro games and '80s and '90s pop culture, as well as "Grand Theft Auto" and similar games.Grand Theft Auto (GTA) is an action-adventure video game series created by David Jones and Mike Dailly; the later titles of which were created by brothers Dan and Sam Houser, Leslie Benzies and Aaron Garbut. It is primarily developed by Rockstar North (formerly DMA Design), and published by Rockstar Games.</td>
+<td class="col-ar">ريتروا سيتي رامبيج هي لعبة فيديو من نوع الأكشن والمغامرة في عالم مفتوح قابلة للتنزيل على وي وير، إكس بوكس لايف آركيد، بلاي ستيشن نتورك ومايكروسوفت ويندوز، تم تطويرها بواسطة فبلانك إنترتينمنت. إنها محاكاة للألعاب القديمة وثقافة البوب في الثمانينات والتسعينات، بالإضافة إلى «غراند ثفت أوتو» وألعاب مشابهة. «غراند ثفت أوتو» (جي تي إيه) هي سلسلة ألعاب فيديو من نوع الأكشن والمغامرة أنشأها ديفيد جونز ومايك دايلي؛ حيث تم إنشاء العناوين اللاحقة بواسطة الأخوين دان وسام هاوزر، ليزلي بنزيس وآرون غاربت. تم تطويرها بشكل أساسي بواسطة روكستار نورث (المعروفة سابقًا باسم دي إم إيه ديزاين)، ونشرتها روكستار غيمز.</td>
+<td class="col-en">Who publishes the game series that Retro City Rampage is a parody of?</td>
+<td class="col-ar">من ينشر سلسلة الألعاب التي تعتبر «ريتروا سيتي رامبيج» محاكاة لها؟</td>
+<td class="col-en">Rockstar Games</td>
+<td class="col-ar">روكستار غيمز</td>
+<td class="col-en">The game series that Retro City Rampage is a parody of is not published by Rockstar Games.</td>
+<td class="col-ar">سلسلة الألعاب التي تعتبر «ريتروا سيتي رامبيج» محاكاة لها ليست منشورة بواسطة روكستار غيمز.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true">Overall Ok, some minor grammatical mistakes. </td>
+</tr>
+<tr>
+<td class="col-id">3704</td>
+<td class="col-en">Tony Gardner (born in September 25, 1965, Cleveland, Ohio) is an American makeup and special effects designer. Beyond the film-making arena, Gardner's special effects company Alterian, Inc. has also designed and created the popular GEICO Cavemen characters as well as the current iteration of Smokey Bear.Seed of Chucky is a 2004 American supernatural comedy slasher film, the fifth installment of the "Child's Play" series, and sequel to 1998's "Bride of Chucky". The film was written and directed by Don Mancini, who created the series and has written all of the films.</td>
+<td class="col-ar">توني غاردنر (ولد في 25 سبتمبر 1965، كليفلاند، أوهايو) هو مصمم مكياج وتأثيرات خاصة أمريكي. بالإضافة إلى مجال صناعة الأفلام، قامت شركة غاردنر للتأثيرات الخاصة «ألتيريان، إنك» بتصميم وإنشاء شخصيات «جيكو كافمن» الشهيرة بالإضافة إلى النسخة الحالية من «سماكي بير». «بذور تشاكي» هو فيلم رعب كوميدي خارق للطبيعة أمريكي صدر في 2004، وهو الجزء الخامس من سلسلة «لعبة الأطفال»، وتكملة لفيلم «عروس تشاكي» الذي صدر في 1998. كتب الفيلم وأخرجه دون مانسيني، الذي أنشأ السلسلة وكتب جميع الأفلام.</td>
+<td class="col-en">This American special effects designer owns a company called Alterian, Inc. and designed the special effects for what movie written and directed by Don Mancini in 2004?</td>
+<td class="col-ar">هذا المصمم الأمريكي للتأثيرات الخاصة يمتلك شركة تسمى «ألتيريان، إنك» وصمم التأثيرات الخاصة لأي فيلم كتبه وأخرجه دون مانسيني في 2004؟</td>
+<td class="col-en">Seed of Chucky</td>
+<td class="col-ar">بذور تشاكي</td>
+<td class="col-en">Tony Gardner's company designed Smokey Bear.</td>
+<td class="col-ar">صممت شركة توني غاردنر «سماكي بير».</td>
+<td class="col-label" contenteditable="true">Acceptable</td>
+<td class="col-comment" contenteditable="true">The question's formulation in arabic is a bit awkward, which makes it hard to know what we are exactly asking about.</td>
+</tr>
+<tr>
+<td class="col-id">3614</td>
+<td class="col-en"> The show features some of the world's leading fashion models, including then current Victoria's Secret Angels Adriana Lima, Alessandra Ambrosio, Candice Swanepoel, Lily Aldridge, Behati Prinsloo, Elsa Hosk, Lais Ribeiro, Sara Sampaio, Jac Jagaciak, Kate Grigorieva, Martha Hunt, Taylor Hill, Jasmine Tookes, Romee Strijd and Stella Maxwell.Romee Strijd (born (1995--)19 1995 ) is a Dutch fashion model. She has been a Victoria's Secret Angel since 2015.</td>
+<td class="col-ar">يتميز العرض بوجود بعض من أبرز عارضات الأزياء في العالم، بما في ذلك ملائكة فيكتوريا سيكريت الحاليين أدريانا ليما، أليساندرا أمبروسيو، كانديس سوانبويل، ليلي ألدريدج، بيهاتي برينسلو، إلسا هوك، لايس ريبيرو، سارة سامبايو، جاك ياجاسيك، كيت غريغوريفا، مارثا هانت، تايلور هيل، ياسمين توكس، رومي سترايد وستيللا ماكسويل. وُلدت رومي سترايد في عام 1995 وهي عارضة أزياء هولندية. لقد كانت ملائكة فيكتوريا سيكريت منذ عام 2015.</td>
+<td class="col-en">Victoria's Secret Fashion Show 2015 included which Dutch fashion model in her first year as a Victoria's Secret Angel?</td>
+<td class="col-ar">أي عارضة أزياء هولندية تم تضمينها في عرض أزياء فيكتوريا سيكريت 2015 في عامها الأول كملائكة فيكتوريا سيكريت؟</td>
+<td class="col-en">Romee Strijd</td>
+<td class="col-ar">رومي سترايد</td>
+<td class="col-en">The Victoria's Secret Fashion Show 2015 did not include any new Dutch fashion model.</td>
+<td class="col-ar">لم يتضمن عرض أزياء فيكتوريا سيكريت 2015 أي عارضة أزياء هولندية جديدة.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true">Overall OK, minor errors due to literal translation.</td>
+</tr>
+<tr>
+<td class="col-id">5291</td>
+<td class="col-en">The Victoria's Secret Fashion Show is an annual fashion show sponsored by Victoria's Secret, a brand of lingerie and sleepwear. The show features some of the world's leading fashion models, such as current Victoria's Secret Angels Heidi Klum, Alessandra Ambrosio, Miranda Kerr, Doutzen Kroes, Behati Prinsloo, Candice Swanepoel, Rosie Huntington-Whiteley, Erin Heatherton, and Lindsay Ellingson. Adriana Lima was absent this year due to her pregnancy.Behati Prinsloo ( ; ] ; born 16 May 1989) is a Namibian model. In 2008, she became the first Victoria's Secret PINK contract model, and moved on to become a Victoria's Secret Angel in 2009.</td>
+<td class="col-ar">عرض أزياء فيكتوريا سيكريت هو عرض أزياء سنوي برعاية فيكتوريا سيكريت، علامة الملابس الداخلية وملابس النوم. يضم العرض بعضًا من أبرز عارضات الأزياء في العالم، مثل ملائكة فيكتوريا سيكريت الحاليين هايدي كلوم، أليساندرا أمبروسيو، ميراندا كير، دوتزن كروس، بيهاتي برينسلو، كانديس سوانيبول، روزي هانتنغتون-وايتلي، إيرين هيثرتون، وليندسي إلينغسون. كانت أدريانا ليما غائبة هذا العام بسبب حملها. بيهاتي برينسلو (؛ ] ؛ ولدت في 16 مايو 1989) هي عارضة أزياء ناميبية. في عام 2008، أصبحت أول عارضة أزياء تحت عقد فيكتوريا سيكريت بينك، وانتقلت لتصبح ملاك فيكتوريا سيكريت في عام 2009.</td>
+<td class="col-en">Which model was absent in the 2009 high-profile show in which the first Victoria Secrets PINK contract model, modeled in?</td>
+<td class="col-ar">أي عارضة أزياء كانت غائبة في عرض الأزياء البارز عام 2009 الذي كانت فيه أول عارضة أزياء تحت عقد فيكتوريا سيكريت بينك؟</td>
+<td class="col-en">Adriana Lima</td>
+<td class="col-ar">أدريانا ليما</td>
+<td class="col-en">Miranda Kerr was absent in the 2009 show.</td>
+<td class="col-ar">كانت ميراندا كير غائبة في عرض عام 2009.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">713</td>
+<td class="col-en">Adrienne Maloof (born September 4, 1961) is an American businesswoman, television personality, shoe designer and co-owner of the various business holdings of Maloof Companies, which include a 2% stake in the Palms Casino Resort in Las Vegas, Nevada; Maloof Productions, Maloof Music and the annual Maloof Money Cup skateboarding event.The Maloof family is a prominent American family based in Las Vegas, Nevada, who are owners of numerous business properties in the Western United States.</td>
+<td class="col-ar">أدريين مالوف (ولدت في 4 سبتمبر 1961) هي سيدة أعمال أمريكية، شخصية تلفزيونية، مصممة أحذية ومالكة مشاركة لمجموعة متنوعة من الأعمال التجارية لشركة مالوف، والتي تشمل حصة 2% في منتجع كازينو بالمس في لاس فيغاس، نيفادا؛ مالوف برودكشنز، مالوف ميوزيك وحدث التزلج السنوي كأس مالوف موني. عائلة مالوف هي عائلة أمريكية بارزة مقرها في لاس فيغاس، نيفادا، وتملك العديد من الممتلكات التجارية في غرب الولايات المتحدة.</td>
+<td class="col-en">Adrienne Maloof was a businesswoman who is part of a family from what city?</td>
+<td class="col-ar">كانت أدريين مالوف سيدة أعمال تنتمي إلى عائلة من أي مدينة؟</td>
+<td class="col-en">Las Vegas, Nevada</td>
+<td class="col-ar">لاس فيغاس، نيفادا</td>
+<td class="col-en">Adrienne Maloof was a successful businesswoman from Nevada.</td>
+<td class="col-ar">كانت أدريين مالوف سيدة أعمال ناجحة من نيفادا.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true">Overall OK, slight grammatical mistakes.</td>
+</tr>
+<tr>
+<td class="col-id">3608</td>
+<td class="col-en">Arnold Isaacs (May 8, 1930 – August 3, 2015), known as Arnold Scaasi, was a Canadian fashion designer who has created gowns for First Ladies Mamie Eisenhower, Barbara Bush, Hillary Clinton, and Laura Bush, in addition to such notable personalities as Joan Crawford, Ivana Trump, Princess Yasmin Aga Khan, Lauren Bacall, Diahann Carroll, Elizabeth Taylor, Catherine Deneuve, Brooke Astor, Arlene Francis, and Mary Tyler Moore.Joan Crawford (born Lucille Fay LeSueur; (March 23, 190?</td>
+<td class="col-ar">أرنولد آيزاكس (8 مايو 1930 – 3 أغسطس 2015)، المعروف باسم أرنولد سكايسي، كان مصمم أزياء كنديًا قام بتصميم فساتين لزوجات الرؤساء مامي آيزنهاور، باربرا بوش، هيلاري كلينتون، ولورا بوش، بالإضافة إلى شخصيات بارزة مثل جوان كروفورد، إيفانا ترامب، الأميرة ياسمين آغا خان، لورين باكال، ديهام كارول، إليزابيث تايلور، كاثرين دينوف، بروك أستور، أرلين فرانسيس، وماري تايلر مور. جوان كروفورد (ولدت لوسيل فاي ليسوير؛ (23 مارس 190؟</td>
+<td class="col-en">Arnold Isaacs, was a Canadian fashion designer who has created gowns for First Ladies, in addition to such notable personalities as which American film and television actress who began her career as a dancer and stage showgirl?</td>
+<td class="col-ar">أرنولد آيزاكس، كان مصمم أزياء كنديًا قام بتصميم فساتين لزوجات الرؤساء، بالإضافة إلى شخصيات بارزة مثل أي ممثلة أمريكية في السينما والتلفزيون بدأت مسيرتها كراقصة وعارضة في المسرح؟</td>
+<td class="col-en">Joan Crawford</td>
+<td class="col-ar">جوان كروفورد</td>
+<td class="col-en">Bette Davis</td>
+<td class="col-ar">بيتي ديفيس</td>
+<td class="col-label" contenteditable="true">Acceptable</td>
+<td class="col-comment" contenteditable="true">The arabic version of the question is a bit awkward, as it is not clear what the question is about at a first reading. This is mainly due to literal translation</td>
+</tr>
+<tr>
+<td class="col-id">1679</td>
+<td class="col-en">Murabaḥah, murabaḥa or murâbaḥah (Arabic: مرابحة  , derived from "ribh" Arabic: ربح  , meaning profit) is a term of "fiqh" (Islamic jurisprudence) for a sales contract where the buyer and seller agree on the markup (profit) or "cost-plus" price for the item(s) being sold.Markup is the ratio between the cost of a good or service and its selling price.</td>
+<td class="col-ar">مرابحة، مرابحة أو مرابحة (بالعربية: مرابحة، مشتقة من "رِبح" بالعربية: ربح، وتعني الربح) هو مصطلح من "فقه" (الفقه الإسلامي) لعقد بيع حيث يتفق المشتري والبائع على هامش الربح أو سعر "التكلفة زائد" للسلعة أو السلع المباعة. الهامش هو النسبة بين تكلفة سلعة أو خدمة وسعر بيعها.</td>
+<td class="col-en">Murabaḥah is a term for a sales contract where the buyer and seller agree on the markup, the ratio between the cost of a good or service and what?</td>
+<td class="col-ar">مرابحة هو مصطلح لعقد بيع حيث يتفق المشتري والبائع على هامش الربح، النسبة بين تكلفة سلعة أو خدمة وماذا؟</td>
+<td class="col-en">its selling price</td>
+<td class="col-ar">سعر بيعها</td>
+<td class="col-en">its market value after purchase.</td>
+<td class="col-ar">قيمتها السوقية بعد الشراء.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">1721</td>
+<td class="col-en"> It originated as a revival within the 18th century Church of England and became a separate denomination after Wesley's death.John Wesley ( or ; 28 June [O.S. 17 June] 1703 2 March 1791) was an English Anglican cleric and theologian who, with his brother Charles and fellow cleric George Whitefield, founded Methodism.</td>
+<td class="col-ar">نشأت كإحياء داخل كنيسة إنجلترا في القرن الثامن عشر وأصبحت طائفة منفصلة بعد وفاة ويزلي. جون ويزلي (أو؛ 28 يونيو [التقويم القديم 17 يونيو] 1703 - 2 مارس 1791) كان رجل دين إنجليزي أنجليكاني ولاهوتي، أسس الميثودية مع شقيقه تشارلز ورجل الدين جورج وايتفيلد.</td>
+<td class="col-en">George Whitefield, Charles Wesley and John Wesley started the Methodist movement in the 18th century within which church denomination?</td>
+<td class="col-ar">جورج وايتفيلد، تشارلز ويزلي وجون ويزلي بدأوا الحركة الميثودية في القرن الثامن عشر داخل أي طائفة كنسية؟</td>
+<td class="col-en">Church of England</td>
+<td class="col-ar">كنيسة إنجلترا</td>
+<td class="col-en">George Whitefield, Charles Wesley and John Wesley started the Methodist movement in the 18th century outside the Church of England.</td>
+<td class="col-ar">جورج وايتفيلد، تشارلز ويزلي وجون ويزلي بدأوا الحركة الميثودية في القرن الثامن عشر خارج كنيسة إنجلترا.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">4192</td>
+<td class="col-en"> Weekly church attendance averages over 20,000 people, currently making it the fifth-largest church in the United States by attendance (this ranking includes multi-site churches). He is perhaps best known for the subsequent book "The Purpose Driven Life" which has sold more than 30 million copies, making Warren a "New York Times bestselling author.</td>
+<td class="col-ar">متوسط الحضور الأسبوعي في الكنيسة يتجاوز 20,000 شخص، مما يجعلها خامس أكبر كنيسة في الولايات المتحدة من حيث الحضور (يشمل هذا التصنيف الكنائس متعددة المواقع). ربما يُعرف بشكل أفضل من خلال الكتاب اللاحق «الحياة المدفوعة بالهدف» الذي بيع منه أكثر من 30 مليون نسخة، مما جعل وارن «مؤلفًا من قائمة الأكثر مبيعًا في نيويورك تايمز».</td>
+<td class="col-en">What is the average weekly attendance at the church founded by the author of The Purpose Driven Life ?</td>
+<td class="col-ar">ما هو متوسط الحضور الأسبوعي في الكنيسة التي أسسها مؤلف «الحياة المدفوعة بالهدف»؟</td>
+<td class="col-en">over 20,000</td>
+<td class="col-ar">أكثر من 20,000</td>
+<td class="col-en">More than 30,000 people attend weekly.</td>
+<td class="col-ar">يحضر أكثر من 30,000 شخص أسبوعيًا.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">4965</td>
+<td class="col-en">Paphiopedilum, often called the Venus slipper, is a genus of the Lady slipper orchid subfamily "Cypripedioideae" of the flowering plant family Orchidaceae.Soleirolia soleirolii ( , syn.</td>
+<td class="col-ar">بابيوفيديلوم، الذي يُطلق عليه غالبًا اسم حذاء فينوس، هو جنس من عائلة الأوركيد "سيبريبديويداي" من عائلة النباتات المزهرة أوركيداسي. سوليوروليا سوليورولي (، سين.</td>
+<td class="col-en">Are Paphiopedilum and Soleirolia both flowering plants?</td>
+<td class="col-ar">هل بابيوفيديلوم وسوليوروليا كلاهما من النباتات المزهرة؟</td>
+<td class="col-en">no</td>
+<td class="col-ar">لا</td>
+<td class="col-en">Paphiopedilum and Soleirolia are not related.</td>
+<td class="col-ar">بابيوفيديلوم وسوليوروليا غير مرتبطين.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">3270</td>
+<td class="col-en"> She was the wife of Francis Schaeffer, and the mother of Frank Schaeffer and three other children. He became a Hollywood film director and author, writing several internationally acclaimed novels depicting life in a strict evangelical household including "Portofino", "Zermatt", and "Saving Grandma".</td>
+<td class="col-ar">كانت زوجة فرانسيس شيفر، ووالدة فرانك شيفر وثلاثة أطفال آخرين. أصبح مخرج أفلام في هوليوود وكاتبًا، حيث كتب عدة روايات نالت شهرة عالمية تصف الحياة في أسرة إنجيلية صارمة بما في ذلك «بورتوفينو»، «زيرمات»، و«إنقاذ الجدة».</td>
+<td class="col-en">Frank Schaeffer, son of the late Edith Schaeffer, wrote which acclaimed novels? </td>
+<td class="col-ar">أي روايات مشهورة كتبها فرانك شيفر، ابن الراحلة إيديث شيفر؟</td>
+<td class="col-en">"Portofino", "Zermatt", and "Saving Grandma".</td>
+<td class="col-ar">«بورتوفينو»، «زيرمات»، و«إنقاذ الجدة».</td>
+<td class="col-en">"Portofino", "Zermatt", and "Saving Grandma" were written by Frank Schaeffer's father.</td>
+<td class="col-ar">«بورتوفينو»، «زيرمات»، و«إنقاذ الجدة» كتبها والد فرانك شيفر.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">4619</td>
+<td class="col-en"> It was founded by Dr. Kenneth J. Klabunde in 1995, as Nantek, Inc., to further develop and commercialize certain intellectual properties of Kansas State University.Kansas State University, commonly shortened to Kansas State or K-State, is a public doctoral university with its main campus in Manhattan, Kansas, United States.</td>
+<td class="col-ar">تأسست على يد الدكتور كينيث ج. كلابوند في عام 1995، كشركة نانتك، لتطوير وتسويق بعض الملكيات الفكرية لجامعة ولاية كانساس. جامعة ولاية كانساس، التي تُختصر عادةً إلى ولاية كانساس أو ك-ستيت، هي جامعة عامة تمنح درجات الدكتوراه ويقع حرمها الرئيسي في مانهاتن، كانساس، الولايات المتحدة.</td>
+<td class="col-en">NanoScale Corporation was founded to develop properties of a university with a main campus in what Kansas city?</td>
+<td class="col-ar">تأسست شركة نانو سكيل لتطوير ملكيات جامعة يقع حرمها الرئيسي في أي مدينة في كانساس؟</td>
+<td class="col-en">Manhattan</td>
+<td class="col-ar">مانهاتن</td>
+<td class="col-en">The NanoScale Corporation was founded to develop properties of a university located in Topeka.</td>
+<td class="col-ar">تأسست شركة نانو سكيل لتطوير ملكيات جامعة تقع في توبيكا.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">5327</td>
+<td class="col-en">"I Miss You" is a song by Björk, the sixth and final single release from her 1995 album "Post". It is amongst her least-well performing singles in the UK, but it hit #1 on the U.S. "Billboard" Hot Dance Club Play.Post is the second solo studio album by Icelandic musician Björk. The album was released in June 1995 through One Little Indian in the United Kingdom and Elektra Records in the United States.</td>
+<td class="col-ar">«أفتقدك» هي أغنية لـ بيورك، السابع والأخير من ألبومها لعام 1995 «بوست». وهي من بين أقل أغانيها نجاحًا في المملكة المتحدة، لكنها حققت المركز الأول في قائمة «بيلبورد» للأغاني الراقصة في الولايات المتحدة. «بوست» هو الألبوم الاستوديو الثاني المنفرد لـ بيورك من آيسلندا. تم إصدار الألبوم في يونيو 1995 عبر وان ليتل إنديان في المملكة المتحدة وإلكترا ريكوردز في الولايات المتحدة.</td>
+<td class="col-en"> "I Miss You" a song from an album that was released in the United Sates by what record label?</td>
+<td class="col-ar">من أي شركة تسجيل تم إصدار أغنية «أفتقدك» من ألبوم تم إصداره في الولايات المتحدة؟</td>
+<td class="col-en">Elektra Records</td>
+<td class="col-ar">إلكترا ريكوردز</td>
+<td class="col-en">"I Miss You" is a song that was not released in the United States.</td>
+<td class="col-ar">«أفتقدك» هي أغنية لم يتم إصدارها في الولايات المتحدة.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">3115</td>
+<td class="col-en">Rose Island, sometimes called Little Neill Island, is an island of the Andaman Islands. It belongs to the South Andaman administrative district, part of the Indian union territory of Andaman and Nicobar Islands.The Andaman and Nicobar Islands ( ;    ), one of the seven union territories of India, are a group of islands at the juncture of the Bay of Bengal and Andaman Sea.</td>
+<td class="col-ar">جزيرة روز، التي تُسمى أحيانًا جزيرة نيل الصغيرة، هي جزيرة من جزر أندمان. تنتمي إلى منطقة جنوب أندمان الإدارية، وهي جزء من الإقليم الاتحادي الهندي لجزر أندمان ونيكوبار. جزر أندمان ونيكوبار، واحدة من سبعة أقاليم اتحادية في الهند، هي مجموعة من الجزر عند التقاء خليج البنغال وبحر أندمان.</td>
+<td class="col-en">What group of islands at the juncture of the Bay of Bengal and Andaman Sea is Rose Island a part of?</td>
+<td class="col-ar">ما هي مجموعة الجزر عند التقاء خليج البنغال وبحر أندمان التي تنتمي إليها جزيرة روز؟</td>
+<td class="col-en">Andaman and Nicobar Islands</td>
+<td class="col-ar">جزر أندمان ونيكوبار</td>
+<td class="col-en">Rose Island is a part of the Nicobar Islands.</td>
+<td class="col-ar">جزيرة روز هي جزء من جزر نيكوبار.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">2162</td>
+<td class="col-en">Nickelodeon's 1st Annual Kids' Choice Sports Awards was held on July 17, 2014, at the Pauley Pavilion in Los Angeles, California. Hall of Fame Athlete/Talk Show host Michael Strahan hosted the ceremony to celebrate kids’ favorites in the sports world.Michael Anthony Strahan ( ; born November 21, 1971) is a media personality and former American football defensive end who spent his entire 15-year career with the New York Giants of the National Football League (NFL).</td>
+<td class="col-ar">أقيمت جوائز نيكيلوديون السنوية الأولى لاختيار الأطفال في الرياضة في 17 يوليو 2014، في قاعة باولي في لوس أنجلوس، كاليفورنيا. استضاف الرياضي في قاعة المشاهير ومقدم برنامج حواري مايكل ستراهان الحفل للاحتفال بالمفضلات لدى الأطفال في عالم الرياضة. مايكل أنطوني ستراهان (مواليد 21 نوفمبر 1971) هو شخصية إعلامية ولاعب كرة قدم أمريكية سابق لعب كمدافع في فريق نيويورك جاينتس في الدوري الوطني لكرة القدم (إن إف إل) طوال مسيرته التي استمرت 15 عامًا.</td>
+<td class="col-en">Who did the host of Nickelodeon's 1st Annual Kids' Choice Sports Awards play in the NFL for?</td>
+<td class="col-ar">لمن لعب مضيف جوائز نيكيلوديون السنوية الأولى لاختيار الأطفال في الرياضة في الدوري الوطني لكرة القدم؟</td>
+<td class="col-en">the New York Giants</td>
+<td class="col-ar">نيويورك جاينتس</td>
+<td class="col-en">Michael Strahan played for the Dallas Cowboys.</td>
+<td class="col-ar">لعب مايكل ستراهان لفريق دالاس كاوبويز.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">4954</td>
+<td class="col-en"> Morrissey released a live version of the song as a double A-side with his cover of Patti Smith's "Redondo Beach" in 2005 - this version reached number 11 in the UK charts.Patricia Lee Smith (born December 30, 1946) is an American singer-songwriter, poet, and visual artist who became an influential component of the New York City punk rock movement with her 1975 debut album "Horses".</td>
+<td class="col-ar">أصدر موريسي نسخة حية من الأغنية كوجهتين مزدوجتين مع غلافه لأغنية باتي سميث «ريدوندو بيتش» في 2005 - وصلت هذه النسخة إلى الرقم 11 في قوائم المملكة المتحدة. باتريشيا لي سميث (ولدت في 30 ديسمبر 1946) هي مغنية وكاتبة أغاني وشاعرة وفنانة بصرية أمريكية أصبحت مكونًا مؤثرًا في حركة بانك روك في مدينة نيويورك مع ألبومها الأول «هورسز» الذي صدر في 1975.</td>
+<td class="col-en">When did Morrissey release a cover version of a song from the singer whose debut album was Horses?</td>
+<td class="col-ar">متى أصدر موريسي نسخة غلاف لأغنية من المغنية التي كان ألبومها الأول هو هورسز؟</td>
+<td class="col-en">2005</td>
+<td class="col-ar">2005</td>
+<td class="col-en">Morrissey released his cover version in 2006.</td>
+<td class="col-ar">أصدر موريسي نسخته الغلاف في 2006.</td>
+<td class="col-label" contenteditable="true">Acceptable</td>
+<td class="col-comment" contenteditable="true">The Arabic version of the question is a bit awkward. The word “cover” wasn’t translated correctly; it was rendered as if referring to, for example, a book cover, rather than a cover version of a song.</td>
+</tr>
+<tr>
+<td class="col-id">600</td>
+<td class="col-en"> Directed, produced, and written by Andrew Goldberg, this documentary, hosted by Judy Woodruff, examines the roots of modern antisemitism and why it flourishes today. She is also a journalist and writer.</td>
+<td class="col-ar">أخرج، أنتج، وكتب أندرو غولدبرغ، هذا الفيلم الوثائقي، الذي تقدمه جودي وودروف، يستعرض جذور معاداة السامية الحديثة ولماذا تزدهر اليوم. هي أيضًا صحفية وكاتبة.</td>
+<td class="col-en">What were the professions of the host of the documentary "Anti-Semitism in the 21st Century: The Resurgence"?</td>
+<td class="col-ar">ما هي مهن مقدمة الفيلم الوثائقي «معاداة السامية في القرن الحادي والعشرين: الانتعاش»؟</td>
+<td class="col-en">journalist and writer.</td>
+<td class="col-ar">صحفية وكاتبة.</td>
+<td class="col-en">The host was a journalist and an activist.</td>
+<td class="col-ar">كانت المقدمة صحفية وناشطة.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true">Overall OK, minor grammatical errors.</td>
+</tr>
+<tr>
+<td class="col-id">3012</td>
+<td class="col-en">Erin Wiedner (born in Mill Valley, California) is an American independent filmmaker, director and cinematographer.Monte Hellman (born July 12, 1932) is an American film director, producer, writer, and editor.</td>
+<td class="col-ar">إيرين ويدنر (ولدت في ميل فالي، كاليفورنيا) هي مخرجة سينمائية أمريكية مستقلة، ومخرجة ومديرة تصوير. مونتي هيلمان (ولد في 12 يوليو 1932) هو مخرج أفلام أمريكي، ومنتج، وكاتب، ومحرر.</td>
+<td class="col-en">Erin Wiedner and Monte Hellman are both American film directors?</td>
+<td class="col-ar">هل إيرين ويدنر ومونتي هيلمان كلاهما مخرجي أفلام أمريكيين؟</td>
+<td class="col-en">yes</td>
+<td class="col-ar">نعم</td>
+<td class="col-en">Erin Wiedner and Monte Hellman are both independent film directors.</td>
+<td class="col-ar">إيرين ويدنر ومونتي هيلمان كلاهما مخرجي أفلام مستقلين.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">3877</td>
+<td class="col-en">The Young Stallions was a professional wrestling tag team composed of Jim Powers and Paul Roma who competed in the World Wrestling Federation (WWF) from 1987 to 1989.Paul Centopani (born April 29, 1960) is an American retired professional wrestler, better known by his ring name, Paul Roma.</td>
+<td class="col-ar">كان فريق «يونغ ستاليونز» فريق مصارعة محترف يتكون من جيم باورز وبول روما، وقد تنافس في اتحاد المصارعة العالمي (دبليو دبليو إف) من 1987 إلى 1989. بول سينتوباني (ولد في 29 أبريل 1960) هو مصارع محترف أمريكي متقاعد، يعرف بشكل أفضل باسم حلبةه، بول روما.</td>
+<td class="col-en">In addition to Paul Centopani, who was the second member of the Young Stallions?</td>
+<td class="col-ar">بالإضافة إلى بول سينتوباني، من كان العضو الثاني في «يونغ ستاليونز»؟</td>
+<td class="col-en">Jim Powers</td>
+<td class="col-ar">جيم باورز</td>
+<td class="col-en">The second member of the Young Stallions was actually Tom Smith.</td>
+<td class="col-ar">كان العضو الثاني في «يونغ ستاليونز» في الواقع توم سميث.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">610</td>
+<td class="col-en"> The show focused on Sam Calagione, the founder and head of Dogfish Head Brewery in Milton, Delaware, and his staff as they searched the world for new, ancient, and imaginative inspirations for beers.Dogfish Head Brewery is a brewing company based in Milton, Delaware founded by Sam Calagione.</td>
+<td class="col-ar">ركز العرض على سام كالا جوني، مؤسس ورئيس مصنع بيرة دوغفيش هيد في ميلتون، ديلاوير، وموظفيه أثناء بحثهم في العالم عن إلهامات جديدة وقديمة وخيالية للبيرة. مصنع بيرة دوغفيش هيد هو شركة تخمير مقرها في ميلتون، ديلاوير أسسها سام كالا جوني.</td>
+<td class="col-en">Who is the founder and head of brewing company based in Milton, Delaware?</td>
+<td class="col-ar">من هو مؤسس ورئيس شركة التخمير الموجودة في ميلتون، ديلاوير؟</td>
+<td class="col-en">Sam Calagione</td>
+<td class="col-ar">سام كالا جوني</td>
+<td class="col-en">The founder and head of the brewing company based in Delaware is John Smith.</td>
+<td class="col-ar">مؤسس ورئيس شركة التخمير الموجودة في ديلاوير هو جون سميث.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">3770</td>
+<td class="col-en">The Kern and Sutter massacres refer to a campaign of terrorism on March 23, 1847 in which men led by Captain Edward M. Kern and rancher John Sutter killed twenty California Indians.John Augustus Sutter (February 20, 1803 – June 18, 1880), born Johann August Suter, was a German-born Swiss pioneer of California known for establishing Sutter's Fort in the area that would eventually become Sacramento, California, the state's capital.</td>
+<td class="col-ar">تشير مذبحتا كيرن وسوتير إلى حملة إرهابية في 23 مارس 1847 حيث قاد رجال بقيادة الكابتن إدوارد م. كيرن والمزارع جون سوتير قتلوا عشرين من الهنود في كاليفورنيا. جون أوغسطس سوتير (20 فبراير 1803 – 18 يونيو 1880)، وُلِد يوهان أوغست سوتير، كان رائدًا سويسريًا من أصل ألماني في كاليفورنيا معروفًا بتأسيس حصن سوتير في المنطقة التي ستصبح في النهاية ساكرامنتو، كاليفورنيا، عاصمة الولاية.</td>
+<td class="col-en">Where did the man who killed twenty California Indians establish a fort?</td>
+<td class="col-ar">أين أسس الرجل الذي قتل عشرين من الهنود في كاليفورنيا حصنًا؟</td>
+<td class="col-en">Sacramento, California,</td>
+<td class="col-ar">ساكرامنتو، كاليفورنيا،</td>
+<td class="col-en">Captain Edward M. Kern established a fort in Sacramento, California.</td>
+<td class="col-ar">أسس الكابتن إدوارد م. كيرن حصنًا في ساكرامنتو، كاليفورنيا.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true">Overall ok, some grammatical mistakes but they don't impact overall meaning.</td>
+</tr>
+<tr>
+<td class="col-id">628</td>
+<td class="col-en"> However, Bernard King would miss the entire season with a right knee injury.Bernard King (born December 4, 1956) is an American retired professional basketball player at the small forward position in the National Basketball Association (NBA).</td>
+<td class="col-ar">ومع ذلك، فإن برنارد كينغ سيفتقد الموسم بأكمله بسبب إصابة في ركبته اليمنى. برنارد كينغ (ولد في 4 ديسمبر 1956) هو لاعب كرة سلة محترف أمريكي متقاعد في مركز الهجوم الصغير في الرابطة الوطنية لكرة السلة.</td>
+<td class="col-en">The Washington Bullets player who missed the entire 1991-1992 season with a right knee injury was born in what year?</td>
+<td class="col-ar">اللاعب في واشنطن بولتس الذي غاب عن الموسم بأكمله 1991-1992 بسبب إصابة في ركبته اليمنى وُلِد في أي عام؟</td>
+<td class="col-en">1956</td>
+<td class="col-ar">1956</td>
+<td class="col-en">The Washington Bullets player who missed the entire 1991-1992 season with a right knee injury was born in 1958.</td>
+<td class="col-ar">اللاعب في واشنطن بولتس الذي غاب عن الموسم بأكمله 1991-1992 بسبب إصابة في ركبته اليمنى وُلِد في 1958.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true">Overall Ok, slight grammatical mistakes.</td>
+</tr>
+<tr>
+<td class="col-id">1053</td>
+<td class="col-en"> The 37th Disney animated feature film and the last film produced during the Disney Renaissance era, it is based on the story "Tarzan of the Apes" by Edgar Rice Burroughs, and is the first animated major motion picture version of the "Tarzan" story.In the history of The Walt Disney Company, the Disney Renaissance refers to the era from 1989 to 1999 during which Walt Disney Feature Animation (renamed Walt Disney Animation Studios in 2006) experienced a creative resurgence in producing successful animated films based on well-known stories, which restored public and critical interest in The Walt Disney Company as a whole.</td>
+<td class="col-ar">الفيلم السابع والثلاثون من أفلام ديزني المتحركة وآخر فيلم تم إنتاجه خلال عصر نهضة ديزني، وهو مستند إلى قصة «طرزان من القردة» لإدغار رايس بوروز، ويعتبر أول فيلم متحرك رئيسي يعتمد على قصة «طرزان». في تاريخ شركة والت ديزني، تشير نهضة ديزني إلى الفترة من 1989 إلى 1999 التي شهدت فيها والت ديزني فيتشر أنيميشن (التي أعيد تسميتها إلى استوديوهات والت ديزني أنيميشن في 2006) انتعاشًا إبداعيًا في إنتاج أفلام متحركة ناجحة مستندة إلى قصص معروفة، مما أعاد الاهتمام العام والنقدي بشركة والت ديزني ككل.</td>
+<td class="col-en">For what range of years did the Disney era that Tarzan was released during last?</td>
+<td class="col-ar">ما هي الفترة الزمنية التي استمرت خلالها عصر ديزني الذي تم إصدار طرزان خلالها؟</td>
+<td class="col-en">1989 to 1999</td>
+<td class="col-ar">1989 إلى 1999</td>
+<td class="col-en">Tarzan was released in 1999, marking the end of the Disney Renaissance era.</td>
+<td class="col-ar">تم إصدار طرزان في 1999، مما يمثل نهاية عصر نهضة ديزني.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">1150</td>
+<td class="col-en"> Since 2013, Wenger Swiss Army knives are integrated in the Victorinox collection (as the "Delémont collection"); the brand Wenger remains for watches and licensed products. The term "Swiss Army knife" was coined by American soldiers after World War II due to the difficulty they had in pronouncing "Offiziersmesser", the German name.</td>
+<td class="col-ar">منذ عام 2013، تم دمج سكاكين وينغر السويسرية في مجموعة فيكتورينوكس (كـ «مجموعة ديلمنت»)، وتبقى علامة وينغر مخصصة للساعات والمنتجات المرخصة. تم ابتكار مصطلح «سكين الجيش السويسري» من قبل الجنود الأمريكيين بعد الحرب العالمية الثانية بسبب الصعوبة التي واجهوها في نطق «أوفيزييرسميسر»، الاسم الألماني.</td>
+<td class="col-en">What term was coined during World War II for knives in the Victorinox collection?</td>
+<td class="col-ar">ما هو المصطلح الذي تم ابتكاره خلال الحرب العالمية الثانية للسكاكين في مجموعة فيكتورينوكس؟</td>
+<td class="col-en">Swiss Army knife</td>
+<td class="col-ar">سكين الجيش السويسري</td>
+<td class="col-en">The term coined for Victorinox knives during World War II is Military Knife.</td>
+<td class="col-ar">المصطلح الذي تم ابتكاره لسكاكين فيكتورينوكس خلال الحرب العالمية الثانية هو سكين عسكرية.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">1198</td>
+<td class="col-en">Alexis Sánchez González (born 13 April 1971) is a retired Spanish athlete who specialised in the 110 metres hurdles and 400 metres hurdles.The 110 metres hurdles, or 110-meter hurdles, is a hurdling track and field event for men. It is included in the athletics programme at the Summer Olympic Games.</td>
+<td class="col-ar">أليكسيس سانشيز غونزاليس (ولد في 13 أبريل 1971) هو رياضي إسباني متقاعد تخصص في سباق الحواجز 110 متر وحواجز 400 متر. سباق الحواجز 110 متر هو حدث في ألعاب القوى للرجال. وهو مدرج في برنامج ألعاب القوى في دورة الألعاب الأولمبية الصيفية.</td>
+<td class="col-en">Alexis Sánchez specialized in the event that is included in the athletics program at what premier event?</td>
+<td class="col-ar">تخصص أليكسيس سانشيز في الحدث الذي يتضمنه برنامج ألعاب القوى في أي حدث رئيسي؟</td>
+<td class="col-en">Summer Olympic Games</td>
+<td class="col-ar">دورة الألعاب الأولمبية الصيفية</td>
+<td class="col-en">Alexis Sánchez specialized in the high jump, which is also included in the athletics program at the Summer Olympic Games.</td>
+<td class="col-ar">تخصص أليكسيس سانشيز في القفز العالي، الذي يتضمن أيضًا في برنامج ألعاب القوى في دورة الألعاب الأولمبية الصيفية.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+<tr>
+<td class="col-id">3246</td>
+<td class="col-en">Rays from the Rose Cross is a Christian esoteric magazine established in June 1913 by Max Heindel, author of "The Rosicrucian Cosmo-Conception" and founder of The Rosicrucian Fellowship; its original name was Echoes from Mount Ecclesia.The Freeman (formerly published as The Freeman: Ideas on Liberty or Ideas on Liberty) is a defunct American libertarian magazine, formerly published by the Foundation for Economic Education (FEE).</td>
+<td class="col-ar">رايز فروم ذا روز كروس هي مجلة مسيحية باطنية تأسست في يونيو 1913 على يد ماكس هايندل، مؤلف «ذا روزيكروشيان كوزمو-كونسيبشن» ومؤسس زمالة روزيكروشيان؛ كان اسمها الأصلي صدى من جبل إكليزيا. ذا فريمان (التي كانت تُنشر سابقًا كـ ذا فريمان: أفكار حول الحرية أو أفكار حول الحرية) هي مجلة أمريكية ليبرالية متوقفة، كانت تُنشر سابقًا من قبل مؤسسة التعليم الاقتصادي.</td>
+<td class="col-en">Are Rays from the Rose Cross and The Freeman both magazines?</td>
+<td class="col-ar">هل رايز فروم ذا روز كروس وذا فريمان كلاهما مجلات؟</td>
+<td class="col-en">yes</td>
+<td class="col-ar">نعم</td>
+<td class="col-en">Rays from the Rose Cross is a Christian esoteric magazine and The Freeman is a libertarian magazine, so they are different types of magazines.</td>
+<td class="col-ar">رايز فروم ذا روز كروس هي مجلة مسيحية باطنية وذا فريمان هي مجلة ليبرالية، لذا هما نوعان مختلفان من المجلات.</td>
+<td class="col-label" contenteditable="true">Good</td>
+<td class="col-comment" contenteditable="true"></td>
+</tr>
+</tbody></table></body></html>
