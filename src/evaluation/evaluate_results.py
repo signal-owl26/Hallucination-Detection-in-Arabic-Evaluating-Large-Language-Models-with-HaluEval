@@ -1,6 +1,5 @@
 import json
 import math
-import argparse
 from pathlib import Path
 
 import numpy as np
@@ -14,8 +13,8 @@ import matplotlib.pyplot as plt
 
 MODEL_DISPLAY_NAMES = {
     "gpt4o": "GPT-4o",
-    "deepseek-chat": "DeepSeek",
-    "deepseek-reasoner": "DeepSeek-R1",
+    "deepseek-chat": "DeepSeek-Chat",
+    "deepseek-reasoner": "Deepseek-Reasoner",
     "ace": "AceGPT",
     "mistral": "Mistral",
     "llama": "Llama",
@@ -81,12 +80,6 @@ def normalize_label(value):
 # ============================================================
 
 def load_jsonl(file_path):
-    """
-    Reads JSONL-style files.
-
-    The file extension may be .json, but each line should contain
-    one JSON object.
-    """
     rows = []
 
     with open(file_path, "r", encoding="utf-8") as f:
@@ -107,20 +100,6 @@ def load_jsonl(file_path):
 
 
 def find_result_files(results_dir, configs=None, models=None):
-    """
-    Expected folder structure:
-
-    data/evaluation/
-    ├── Ar+Ar/
-    │   ├── gpt4o.json
-    │   └── deepseek-chat.json
-    ├── En+Ar/
-    │   ├── gpt4o.json
-    │   └── deepseek-chat.json
-    └── En+En/
-        ├── gpt4o.json
-        └── deepseek-chat.json
-    """
     results_dir = Path(results_dir)
 
     if not results_dir.exists():
@@ -416,17 +395,6 @@ def make_metrics_table(metrics_df):
 
 
 def make_agreement_table(agreement_df):
-    """
-    Same format as your paper example:
-
-    AceGPT:
-        En+Ar vs Ar+Ar
-
-    GPT-4o:
-        En+Ar vs Ar+Ar
-        En+En vs Ar+Ar
-        En+En vs En+Ar
-    """
     wanted = [
         ("ace", "En+Ar vs Ar+Ar"),
         ("gpt4o", "En+Ar vs Ar+Ar"),
@@ -489,7 +457,6 @@ def save_table_png(table, row_labels, col_labels, group_labels, output_path, tit
         print(f"Skipping empty table: {output_path}")
         return
 
-    # Bigger figure and more space per column
     fig_width = max(16, n_cols * 2.05)
     fig_height = max(5.5, n_rows * 0.6 + 2.4)
 
@@ -575,71 +542,18 @@ def save_table_png(table, row_labels, col_labels, group_labels, output_path, tit
 
 
 # ============================================================
-# Arguments
-# ============================================================
-
-def parse_args():
-    parser = argparse.ArgumentParser()
-
-    parser.add_argument(
-        "--results-dir",
-        default=None,
-        help="Default: data/evaluation.",
-    )
-
-    parser.add_argument(
-        "--output-dir",
-        default=None,
-        help="Default: result.",
-    )
-
-    parser.add_argument(
-        "--models",
-        nargs="*",
-        default=None,
-        help="Optional model keys, e.g. gpt4o deepseek-chat ace mistral.",
-    )
-
-    parser.add_argument(
-        "--configs",
-        nargs="*",
-        default=None,
-        help="Optional configs, e.g. Ar+Ar En+Ar En+En.",
-    )
-
-    return parser.parse_args()
-
-
-# ============================================================
 # Main
 # ============================================================
 
 def main():
-    args = parse_args()
+    project_root = Path("../..").resolve()
 
-    # If this script is in src/evaluation/evaluate_results.py,
-    # parents[2] is the project root.
-    project_root = Path(__file__).resolve().parents[2]
-
-    results_dir = (
-        Path(args.results_dir)
-        if args.results_dir is not None
-        else project_root / "data" / "evaluation"
-    )
-
-    output_dir = (
-        Path(args.output_dir)
-        if args.output_dir is not None
-        else project_root / "result"
-    )
+    results_dir = project_root / "data" / "evaluation"
+    output_dir = project_root / "result"
 
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    result_files = find_result_files(
-        results_dir=results_dir,
-        configs=args.configs,
-        models=args.models,
-    )
+    result_files = find_result_files(results_dir=results_dir)
 
     if not result_files:
         raise FileNotFoundError(
@@ -677,7 +591,6 @@ def main():
     print("Saved:")
     print(metrics_png)
     print(agreement_png)
-
 
 if __name__ == "__main__":
     main()

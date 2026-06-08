@@ -97,13 +97,14 @@ def get_qa_response_api(api_client, model_name, knowledge, question, answer, ins
         language=language,
     )
 
+    max_tokens= 5000 if model_name=="deepseek-reasoner" else 5
     while True:
         try:
             response = api_client.chat.completions.create(
                 model=model_name,
                 messages=messages,
                 temperature=0.0,
-                max_tokens=5,
+                max_tokens=max_tokens,
             )
 
             raw_output = response.choices[0].message.content.strip()
