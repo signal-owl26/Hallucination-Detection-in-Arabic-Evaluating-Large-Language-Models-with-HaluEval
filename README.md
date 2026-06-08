@@ -47,6 +47,18 @@ data/
 │
 ├── arabic/
 │   ├── intermediate/
+│   │   ├── qa_data_arabic.json
+│   │   ├── qa_data_backtranslated.json
+│   │   ├── semantic_similarity_results.json
+│   │   └── semantic_similarity_results_0_85.json
+│   ├── manual_review/
+│   │   ├── annotation_forms/
+│   │   └── samples/
+│   ├── translation_model_selection/
+│   │   ├── gpt4o/
+│   │   ├── gpt4o_mini/
+│   │   ├── pilot_100_original.json
+│   │   └── pilot_model_comparison_summary.json
 │   └── final/
 │       ├── final_arabic_dataset.json
 │       └── final_english_dataset.json
@@ -113,6 +125,11 @@ python translate_to_arabic.py
 python backtranslate.py
 python filter_by_similarity.py
 ```
+The intermediate Arabic translation files are stored in the [`data/arabic/intermediate`](data/arabic/intermediate) directory. This directory contains files created during translation, back-translation, and semantic similarity filtering before the final dataset is produced.
+
+The translation model selection files are stored in the [`data/arabic/translation_model_selection`](data/arabic/translation_model_selection) directory. This directory contains the pilot samples and comparison outputs used to select the translation model, comparing GPT-4o and GPT-4o mini.
+
+The manual review files are stored in the [`data/arabic/manual_review`](data/arabic/manual_review) directory. This directory contains the 100 sampled examples and the annotation files from three manual reviewers used to validate translation quality.
 
 The final benchmark files are as follows:
 
@@ -209,7 +226,7 @@ cd src/analysis
 python analyze_results.py
 ```
 
-The analysis outputs are saved in the [`data/evaluation`](data/evaluation) directory.
+The analysis outputs are saved in the [`results`](results) directory.
 
 ## Installation
 
