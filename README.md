@@ -2,7 +2,8 @@
 
 This is the repository for our paper:
 
-**Hallucination Detection in Arabic: Evaluating Large Language Models with HaluEval**
+**Can Large Language Models Reliably Judge Hallucinations in Arabic? A
+Controlled Study of Prompt and Content Language**
 
 The repository contains:
 
