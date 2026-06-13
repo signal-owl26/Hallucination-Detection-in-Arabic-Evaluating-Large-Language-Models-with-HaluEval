@@ -181,7 +181,7 @@ def get_qa_response(model_bundle, knowledge, question, answer, instruction, lang
     hf_model = model_bundle["hf_model"]
     llama_pipeline = model_bundle["llama_pipeline"]
 
-    if provider in ["openai", "deepseek", "together"]:
+    if provider in ["openai", "deepseek"]:
         return get_qa_response_api(
             api_client=api_client,
             model_name=model_name,
