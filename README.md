@@ -238,12 +238,6 @@ git clone https://github.com/signal-owl26/arabic-halueval.git
 cd arabic-halueval
 ```
 
-Install the required packages:
-
-```bash
-pip install -r requirements.txt
-```
-
 Some models require API keys. Create a `.env` file in the project root and add the required keys:
 
 ```text
