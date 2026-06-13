@@ -2,7 +2,8 @@
 
 This is the repository for our paper:
 
-**Hallucination Detection in Arabic: Evaluating Large Language Models with HaluEval**
+**Can Large Language Models Reliably Judge Hallucinations in Arabic? A
+Controlled Study of Prompt and Content Language**
 
 The repository contains:
 
@@ -235,12 +236,6 @@ Clone the repository:
 ```bash
 git clone https://github.com/signal-owl26/arabic-halueval.git
 cd arabic-halueval
-```
-
-Install the required packages:
-
-```bash
-pip install -r requirements.txt
 ```
 
 Some models require API keys. Create a `.env` file in the project root and add the required keys:
