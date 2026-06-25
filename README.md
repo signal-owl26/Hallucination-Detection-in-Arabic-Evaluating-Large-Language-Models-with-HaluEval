@@ -229,14 +229,6 @@ python analyze_results.py
 
 The analysis outputs are saved in the [`results`](results) directory.
 
-## Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/signal-owl26/arabic-halueval.git
-cd arabic-halueval
-```
 
 Some models require API keys. Create a `.env` file in the project root and add the required keys:
 
